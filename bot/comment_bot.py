@@ -13,7 +13,7 @@ Env:
   DRY_RUN            "1" = only show the replies, do not post them
   MODEL              Claude model id (default claude-haiku-5-5)
   WINDOW_HOURS       only answer messages newer than this (default 6)
-  MAX_REPLIES        max replies per run (default 20)
+  MAX_REPLIES        max replies per run (default 10)
   MAX_PER_THREAD     max bot replies inside one thread (default 3)
   MEDIA_LIMIT        how many latest posts to scan (default 8)
 """
@@ -26,7 +26,7 @@ KEY = os.environ.get('ANTHROPIC_API_KEY', '').strip()
 DRY = os.environ.get('DRY_RUN', '0').strip().lower() in ('1', 'true', 'yes')
 MODEL = os.environ.get('MODEL', '').strip() or 'claude-haiku-5-5'
 WINDOW = float(os.environ.get('WINDOW_HOURS', '') or (48 if DRY else 6))
-MAX_REPLIES = int(os.environ.get('MAX_REPLIES', '') or 20)
+MAX_REPLIES = int(os.environ.get('MAX_REPLIES', '') or 10)
 MAX_PER_THREAD = int(os.environ.get('MAX_PER_THREAD', '') or 3)
 MEDIA_LIMIT = int(os.environ.get('MEDIA_LIMIT', '') or 8)
 HERE = os.path.dirname(os.path.abspath(__file__))
