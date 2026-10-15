@@ -115,14 +115,15 @@ def main():
     print(f"Akkaunt: @{me['username']} | model {MODEL} | {'SINOV (javob yozmaydi)' if DRY else 'JONLI'} | oyna {WINDOW} soat")
     cutoff = datetime.now(timezone.utc) - timedelta(hours=WINDOW)
     media = ig_get('me/media', fields='id,caption,permalink,timestamp,comments_count,shortcode', limit=MEDIA_LIMIT).get('data', [])
+    print(f"Postlar: {len(media)} ta")
     done, rows = 0, []
     for m in media:
         if done >= MAX_REPLIES: break
         code = m.get('shortcode') or m.get('permalink', '').rstrip('/').split('/')[-1]
         video = notes.get(code) or f"Video matni (caption): {m.get('caption', '')}"
         comments = ig_all(f"{m['id']}/comments", fields='id,text,timestamp,username,replies.limit(50){id,text,timestamp,username}', limit=50)
-        if comments:
-            print(f"[{code}] {len(comments)} izoh o'qildi (jami {m.get('comments_count')}), birinchisi {comments[0]['timestamp']}, oxirgisi {comments[-1]['timestamp']}")
+        print(f"[{code}] {m.get('timestamp', '')[:16]} | Instagram'dagi izohlar: {m.get('comments_count')} | API bergan: {len(comments)}"
+              + (f" | eng yangisi {max(x['timestamp'] for x in comments)[:16]}" if comments else ''))
         for c in comments:
             if done >= MAX_REPLIES: break
             thread = [c] + sorted((c.get('replies') or {}).get('data', []), key=lambda r: r['timestamp'])
