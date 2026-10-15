@@ -90,14 +90,14 @@ Qat'iy qoidalar:
 
 
 def claude(video, thread, target):
-    convo = '\n'.join(f"{'Biz (med.comix)' if m['ours'] else '@' + m['username']}: {m['text']}" for m in thread)
+    convo = '\n'.join(f"{'Biz (med.comix)' if m['ours'] else '@' + (m['username'] or 'tomoshabin')}: {m['text']}" for m in thread)
     user = f"""Video haqida:
 {video}
 
 Izohlar zanjiri (eskidan yangiga):
 {convo}
 
-Endi @{target['username']} ning oxirgi izohiga javob yoz (yoki SKIP)."""
+Endi @{target['username'] or 'tomoshabin'} ning oxirgi izohiga javob yoz (yoki SKIP)."""
     res = http('https://api.anthropic.com/v1/messages', {
         'model': MODEL, 'max_tokens': 200, 'system': SYSTEM,
         'messages': [{'role': 'user', 'content': user}],
@@ -116,31 +116,35 @@ def main():
     cutoff = datetime.now(timezone.utc) - timedelta(hours=WINDOW)
     media = ig_get('me/media', fields='id,caption,permalink,timestamp,comments_count,shortcode', limit=MEDIA_LIMIT).get('data', [])
     print(f"Postlar: {len(media)} ta")
-    done, rows = 0, []
+    done, rows, errs = 0, [], 0
     for m in media:
         if done >= MAX_REPLIES: break
         code = m.get('shortcode') or m.get('permalink', '').rstrip('/').split('/')[-1]
         video = notes.get(code) or f"Video matni (caption): {m.get('caption', '')}"
-        comments = ig_all(f"{m['id']}/comments", fields='id,text,timestamp,username,replies.limit(50){id,text,timestamp,username}', limit=50)
+        comments = ig_all(f"{m['id']}/comments", fields='id,text,timestamp,username,from,replies.limit(50){id,text,timestamp,username,from}', limit=50)
         print(f"[{code}] {m.get('timestamp', '')[:16]} | Instagram'dagi izohlar: {m.get('comments_count')} | API bergan: {len(comments)}"
-              + (f" | eng yangisi {max(x['timestamp'] for x in comments)[:16]}" if comments else ''))
+              + (f" | ro'yxat boshi {comments[0]['timestamp'][:16]}, oxiri {comments[-1]['timestamp'][:16]}" if comments else ''))
         for c in comments:
             if done >= MAX_REPLIES: break
             thread = [c] + sorted((c.get('replies') or {}).get('data', []), key=lambda r: r['timestamp'])
             for x in thread:
-                x['ours'] = (x.get('username') or '').lower() == my_name
+                fr = x.get('from') or {}
+                x['username'] = x.get('username') or fr.get('username') or ''
+                x['ours'] = bool(x['username'].lower() == my_name or (fr.get('id') and fr.get('id') == me.get('user_id')))
                 x['text'] = (x.get('text') or '').strip()
             last = thread[-1]
             if last['ours'] or ts(last['timestamp']) < cutoff: continue
             if sum(x['ours'] for x in thread) >= MAX_PER_THREAD: continue
             if not last['text']: continue
             try:
-                reply = claude(video, thread, last)
+                reply = claude(video, thread, last); errs = 0
             except Exception as e:
-                print('Claude xatosi:', e); continue
+                errs += 1; print('Claude xatosi:', repr(e)[:300])
+                if errs >= 3: sys.exit('Claude 3 marta ketma-ket xato berdi, to\'xtatildi.')
+                continue
             if not reply or reply.upper().startswith('SKIP'):
                 rows.append((last['username'], last['text'], '— (javobsiz)')); continue
-            reply = f"@{last['username']} {reply}"[:300]
+            reply = (f"@{last['username']} {reply}" if last['username'] else reply)[:300]
             if not DRY:
                 try:
                     http(f"{IG}/{c['id']}/replies", {'message': reply, 'access_token': TOKEN})
