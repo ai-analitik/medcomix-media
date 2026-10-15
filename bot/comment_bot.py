@@ -99,10 +99,13 @@ Izohlar zanjiri (eskidan yangiga):
 
 Endi @{target['username'] or 'tomoshabin'} ning oxirgi izohiga javob yoz (yoki SKIP)."""
     res = http('https://api.anthropic.com/v1/messages', {
-        'model': MODEL, 'max_tokens': 200, 'system': SYSTEM,
+        'model': MODEL, 'max_tokens': 400, 'system': SYSTEM,
+        'thinking': {'type': 'disabled'},  # short replies need no thinking; thinking would eat max_tokens
         'messages': [{'role': 'user', 'content': user}],
     }, {'content-type': 'application/json', 'x-api-key': KEY, 'anthropic-version': '2023-06-01'})
     txt = ''.join(b.get('text', '') for b in res.get('content', []) if b.get('type') == 'text').strip().strip('"«»').strip()
+    if res.get('stop_reason') == 'max_tokens' or not txt:
+        raise RuntimeError(f"javob chala: stop_reason={res.get('stop_reason')}, matn={txt[:40]!r}")
     return txt
 
 
