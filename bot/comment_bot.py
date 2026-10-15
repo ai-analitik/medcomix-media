@@ -116,9 +116,9 @@ def main():
     cutoff = datetime.now(timezone.utc) - timedelta(hours=WINDOW)
     media = ig_get('me/media', fields='id,caption,permalink,timestamp,comments_count,shortcode', limit=MEDIA_LIMIT).get('data', [])
     print(f"Postlar: {len(media)} ta")
-    done, rows, errs = 0, [], 0
+    done, rows, errs, calls = 0, [], 0, 0
     for m in media:
-        if done >= MAX_REPLIES: break
+        if done >= MAX_REPLIES or calls > MAX_REPLIES + 15: break
         code = m.get('shortcode') or m.get('permalink', '').rstrip('/').split('/')[-1]
         video = notes.get(code) or f"Video matni (caption): {m.get('caption', '')}"
         comments = ig_all(f"{m['id']}/comments", fields='id,text,timestamp,username,from,replies.limit(50){id,text,timestamp,username,from}', limit=50)
@@ -136,8 +136,12 @@ def main():
             if last['ours'] or ts(last['timestamp']) < cutoff: continue
             if sum(x['ours'] for x in thread) >= MAX_PER_THREAD: continue
             if not last['text']: continue
+            calls += 1
+            if calls > MAX_REPLIES + 15: break
+            t0 = time.time()
             try:
                 reply = claude(video, thread, last); errs = 0
+                print(f"  Claude {time.time() - t0:.1f}s")
             except Exception as e:
                 errs += 1; print('Claude xatosi:', repr(e)[:300])
                 if errs >= 3: sys.exit('Claude 3 marta ketma-ket xato berdi, to\'xtatildi.')
