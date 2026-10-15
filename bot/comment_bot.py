@@ -17,7 +17,7 @@ Env:
   MAX_PER_THREAD     max bot replies inside one thread (default 3)
   MEDIA_LIMIT        how many latest posts to scan (default 8)
 """
-import json, os, random, sys, time, urllib.parse, urllib.request, urllib.error
+import json, os, random, re, sys, time, urllib.parse, urllib.request, urllib.error
 from datetime import datetime, timezone, timedelta
 
 IG = 'https://graph.instagram.com/v23.0'
@@ -86,7 +86,7 @@ Har bir javob:
 - 1–2 qisqa gap, 60–140 belgi. Uzun tushuntirish, hisob-kitobni to'liq yozish kerak emas.
 - Odamning aynan nima deganiga javob bo'lsin, umumiy shablon emas.
 - Oxiri savol, kichik bahs yoki chaqiriq bilan tugasin. Masalan: uning tajribasini so'ra, "do'stingizni belgilang, u nima der ekan?" de, keyingi qiyinroq savolni taklif qil, ikki variantdan birini tanlashni so'ra.
-- Iliq, hazilkash, jonli so'zlashuv tilida. Kitobiy so'zlar yo'q. Emoji 0–1 ta.
+- Iliq, jonli, oddiy odam yozgandek. Kitobiy so'zlar yo'q.
 - Har safar boshqacha boshla: "Zo'r savol", "Rahmat" kabi bir xil kirishlarni takrorlama.
 - Odam qaysi tilda va qaysi alifboda yozgan bo'lsa, o'shanda javob ber: kirill harflarida yozsa — kirillda, lotinda yozsa — lotinda, ruscha yozsa — ruscha.
 - Ko'chadagi oddiy gap kabi yoz: "sho'ng'idi", "bo'shatdingiz", "ko'paytirib yubordingiz" kabi g'alati so'zlar yo'q.
@@ -109,13 +109,19 @@ Izohlar zanjiri (eskidan yangiga):
 {convo}
 
 Endi @{target['username'] or 'tomoshabin'} ning oxirgi izohiga javob yoz (yoki SKIP).
-Bu safar javobni shunday tugat: {random.choice(HOOKS)}."""
+Javob oxiri uchun yo'nalish (tabiiy chiqsa shunday qil, chiqmasa o'zing oddiy savol ber): {random.choice(HOOKS)}.
+Savol xuddi do'stingiz bilan gaplashgandek oddiy bo'lsin, shablon emas.
+{'Bitta emoji qo\'ysang bo\'ladi.' if random.random() < 0.25 else 'Emoji ishlatma.'}"""
     res = http('https://api.anthropic.com/v1/messages', {
         'model': MODEL, 'max_tokens': 400, 'system': SYSTEM,
         'thinking': {'type': 'disabled'},  # short replies need no thinking; thinking would eat max_tokens
         'messages': [{'role': 'user', 'content': user}],
     }, {'content-type': 'application/json', 'x-api-key': KEY, 'anthropic-version': '2023-06-01'})
     txt = ''.join(b.get('text', '') for b in res.get('content', []) if b.get('type') == 'text').strip().strip('"«»').strip()
+    emo = re.findall(r'[\U0001F300-\U0001FAFF\u2600-\u27BF]', txt)
+    for e in emo[1:]:
+        txt = txt.replace(e, '', 1)
+    txt = re.sub(r'\s{2,}', ' ', txt).strip()
     if res.get('stop_reason') == 'max_tokens' or not txt:
         raise RuntimeError(f"javob chala: stop_reason={res.get('stop_reason')}, matn={txt[:40]!r}")
     return txt
