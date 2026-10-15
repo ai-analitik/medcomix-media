@@ -127,6 +127,23 @@ Savol xuddi do'stingiz bilan gaplashgandek oddiy bo'lsin, shablon emas.
     return txt
 
 
+QWORDS = ('?', 'nega', 'nima', 'qanday', 'qanaqa', 'qachon', 'qayer', 'nechta', 'nimaga', 'rostdan', 'нега', 'нима', 'қандай', 'почему', 'как', 'зачем')
+
+
+def score(msg, ours, now):
+    t = msg['text'].lower()
+    letters = sum(ch.isalnum() for ch in t)
+    sc = 0.0
+    if ours: sc += 5                                    # they answered us: keep the conversation going
+    if any(q in t for q in QWORDS): sc += 3             # questions
+    sc += min(msg.get('like_count') or 0, 20) * 0.5     # liked comments are seen by more people
+    sc += min(letters, 120) / 40                        # some substance
+    if letters < 2: sc -= 3                             # emoji-only / symbols
+    age_h = (now - ts(msg['timestamp'])).total_seconds() / 3600
+    sc += max(0.0, 2 - age_h)                           # fresh comments first
+    return sc
+
+
 def main():
     if not TOKEN or not KEY:
         sys.exit('IG_TOKEN yoki ANTHROPIC_API_KEY topilmadi (GitHub Secrets).')
@@ -137,16 +154,15 @@ def main():
     cutoff = datetime.now(timezone.utc) - timedelta(hours=WINDOW)
     media = ig_get('me/media', fields='id,caption,permalink,timestamp,comments_count,shortcode', limit=MEDIA_LIMIT).get('data', [])
     print(f"Postlar: {len(media)} ta")
-    done, rows, errs, calls = 0, [], 0, 0
+    now = datetime.now(timezone.utc)
+    cands = []
     for m in media:
-        if done >= MAX_REPLIES or calls > MAX_REPLIES + 15: break
         code = m.get('shortcode') or m.get('permalink', '').rstrip('/').split('/')[-1]
         video = notes.get(code) or f"Video matni (caption): {m.get('caption', '')}"
-        comments = ig_all(f"{m['id']}/comments", fields='id,text,timestamp,username,from,replies.limit(50){id,text,timestamp,username,from}', limit=50)
+        comments = ig_all(f"{m['id']}/comments", fields='id,text,timestamp,username,from,like_count,replies.limit(50){id,text,timestamp,username,from,like_count}', limit=50)
         print(f"[{code}] {m.get('timestamp', '')[:16]} | Instagram'dagi izohlar: {m.get('comments_count')} | API bergan: {len(comments)}"
               + (f" | ro'yxat boshi {comments[0]['timestamp'][:16]}, oxiri {comments[-1]['timestamp'][:16]}" if comments else ''))
         for c in comments:
-            if done >= MAX_REPLIES: break
             thread = [c] + sorted((c.get('replies') or {}).get('data', []), key=lambda r: r['timestamp'])
             for x in thread:
                 fr = x.get('from') or {}
@@ -154,31 +170,37 @@ def main():
                 x['ours'] = bool(x['username'].lower() == my_name or (fr.get('id') and fr.get('id') == me.get('user_id')))
                 x['text'] = (x.get('text') or '').strip()
             last = thread[-1]
-            if last['ours'] or ts(last['timestamp']) < cutoff: continue
-            if sum(x['ours'] for x in thread) >= MAX_PER_THREAD: continue
-            if not last['text']: continue
-            calls += 1
-            if calls > MAX_REPLIES + 15: break
-            t0 = time.time()
+            if last['ours'] or not last['text'] or ts(last['timestamp']) < cutoff: continue
+            ours = sum(x['ours'] for x in thread)
+            if ours >= MAX_PER_THREAD: continue
+            cands.append((score(last, ours, now), code, video, c, thread, last))
+    # Most promising first: people already talking with us, questions, liked and longer comments, fresh ones
+    cands.sort(key=lambda z: -z[0])
+    print(f"Javob kutayotgan izohlar: {len(cands)} ta, shulardan eng yaxshi {MAX_REPLIES} tasiga javob beriladi")
+    done, rows, errs, calls = 0, [], 0, 0
+    for sc, code, video, c, thread, last in cands:
+        if done >= MAX_REPLIES or calls >= MAX_REPLIES + 15: break
+        calls += 1
+        t0 = time.time()
+        try:
+            reply = claude(video, thread, last); errs = 0
+            print(f"  Claude {time.time() - t0:.1f}s (ball {sc:.1f})")
+        except Exception as e:
+            errs += 1; print('Claude xatosi:', repr(e)[:300])
+            if errs >= 3: sys.exit('Claude 3 marta ketma-ket xato berdi, to\'xtatildi.')
+            continue
+        if not reply or reply.upper().startswith('SKIP'):
+            rows.append((last['username'], last['text'], '— (javobsiz)')); continue
+        reply = (f"@{last['username']} {reply}" if last['username'] else reply)[:300]
+        if not DRY:
             try:
-                reply = claude(video, thread, last); errs = 0
-                print(f"  Claude {time.time() - t0:.1f}s")
+                http(f"{IG}/{c['id']}/replies", {'message': reply, 'access_token': TOKEN})
             except Exception as e:
-                errs += 1; print('Claude xatosi:', repr(e)[:300])
-                if errs >= 3: sys.exit('Claude 3 marta ketma-ket xato berdi, to\'xtatildi.')
-                continue
-            if not reply or reply.upper().startswith('SKIP'):
-                rows.append((last['username'], last['text'], '— (javobsiz)')); continue
-            reply = (f"@{last['username']} {reply}" if last['username'] else reply)[:300]
-            if not DRY:
-                try:
-                    http(f"{IG}/{c['id']}/replies", {'message': reply, 'access_token': TOKEN})
-                except Exception as e:
-                    print('Instagram xatosi:', e); continue
-                time.sleep(4)
-            done += 1
-            rows.append((last['username'], last['text'], reply))
-            print(f"[{code}] @{last['username']}: {last['text'][:80]!r}\n   -> {reply}")
+                print('Instagram xatosi:', e); continue
+            time.sleep(4)
+        done += 1
+        rows.append((last['username'], last['text'], reply))
+        print(f"[{code}] @{last['username']}: {last['text'][:80]!r}\n   -> {reply}")
     print(f"Tayyor: {done} ta javob {'(yozilmadi, sinov)' if DRY else 'yozildi'}.")
     if SUMMARY:
         with open(SUMMARY, 'a', encoding='utf-8') as f:
