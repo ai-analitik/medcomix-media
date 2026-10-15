@@ -17,7 +17,7 @@ Env:
   MAX_PER_THREAD     max bot replies inside one thread (default 3)
   MEDIA_LIMIT        how many latest posts to scan (default 8)
 """
-import json, os, sys, time, urllib.parse, urllib.request, urllib.error
+import json, os, random, sys, time, urllib.parse, urllib.request, urllib.error
 from datetime import datetime, timezone, timedelta
 
 IG = 'https://graph.instagram.com/v23.0'
@@ -30,6 +30,16 @@ MAX_REPLIES = int(os.environ.get('MAX_REPLIES', '') or 20)
 MAX_PER_THREAD = int(os.environ.get('MAX_PER_THREAD', '') or 3)
 MEDIA_LIMIT = int(os.environ.get('MEDIA_LIMIT', '') or 8)
 HERE = os.path.dirname(os.path.abspath(__file__))
+# A different ending every time, so replies don't all look the same
+HOOKS = [
+    "uning o'z tajribasi haqida bitta qisqa savol bilan tugat",
+    "do'stini belgilashga chaqir (masalan: do'stingizni belgilang, u nima der ekan?)",
+    "ikki variantdan birini tanlashni so'ra",
+    "undan qiyinroq yangi savol yoki test taklif qilib, 'tayyormisiz?' kabi tugat",
+    "hazil bilan kichik bahs och (masalan: 'tan oling, ...')",
+    "uning fikrini so'ra: sizningcha nega shunday?",
+    "qisqa hazil qil va 'yana bir marta urinib ko'rasizmi?' kabi chaqiriq bilan tugat",
+]
 SUMMARY = os.environ.get('GITHUB_STEP_SUMMARY')
 
 
@@ -73,12 +83,13 @@ med.comix — tana va tibbiyot haqidagi qiziqarli faktlarni o'zbek tilida komiks
 
 Maqsad: izoh yozgan odam yana izoh yozishi, suhbat davom etishi.
 Har bir javob:
-- 1–2 qisqa gap, 180 belgidan oshmasin.
+- 1–2 qisqa gap, 60–140 belgi. Uzun tushuntirish, hisob-kitobni to'liq yozish kerak emas.
 - Odamning aynan nima deganiga javob bo'lsin, umumiy shablon emas.
 - Oxiri savol, kichik bahs yoki chaqiriq bilan tugasin. Masalan: uning tajribasini so'ra, "do'stingizni belgilang, u nima der ekan?" de, keyingi qiyinroq savolni taklif qil, ikki variantdan birini tanlashni so'ra.
 - Iliq, hazilkash, jonli so'zlashuv tilida. Kitobiy so'zlar yo'q. Emoji 0–1 ta.
 - Har safar boshqacha boshla: "Zo'r savol", "Rahmat" kabi bir xil kirishlarni takrorlama.
-- Odam qaysi tilda yozgan bo'lsa, o'sha tilda javob ber (o'zbek lotin, o'zbek kirill yoki rus).
+- Odam qaysi tilda va qaysi alifboda yozgan bo'lsa, o'shanda javob ber: kirill harflarida yozsa — kirillda, lotinda yozsa — lotinda, ruscha yozsa — ruscha.
+- Ko'chadagi oddiy gap kabi yoz: "sho'ng'idi", "bo'shatdingiz", "ko'paytirib yubordingiz" kabi g'alati so'zlar yo'q.
 
 Qat'iy qoidalar:
 - Tashxis qo'yma, dori yoki davolash tavsiya qilma. Sog'lig'i haqida jiddiy savol bo'lsa, qisqa iliq javob ber va shifokorga ko'rinishni maslahat qil.
@@ -97,7 +108,8 @@ def claude(video, thread, target):
 Izohlar zanjiri (eskidan yangiga):
 {convo}
 
-Endi @{target['username'] or 'tomoshabin'} ning oxirgi izohiga javob yoz (yoki SKIP)."""
+Endi @{target['username'] or 'tomoshabin'} ning oxirgi izohiga javob yoz (yoki SKIP).
+Bu safar javobni shunday tugat: {random.choice(HOOKS)}."""
     res = http('https://api.anthropic.com/v1/messages', {
         'model': MODEL, 'max_tokens': 400, 'system': SYSTEM,
         'thinking': {'type': 'disabled'},  # short replies need no thinking; thinking would eat max_tokens
