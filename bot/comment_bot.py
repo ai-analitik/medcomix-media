@@ -30,16 +30,6 @@ MAX_REPLIES = int(os.environ.get('MAX_REPLIES', '') or 5)
 MAX_PER_THREAD = int(os.environ.get('MAX_PER_THREAD', '') or 3)
 MEDIA_LIMIT = int(os.environ.get('MEDIA_LIMIT', '') or 8)
 HERE = os.path.dirname(os.path.abspath(__file__))
-# A different ending every time, so replies don't all look the same
-HOOKS = [
-    "uning o'z tajribasi haqida bitta qisqa savol bilan tugat",
-    "do'stini belgilashga chaqir (masalan: do'stingizni belgilang, u nima der ekan?)",
-    "ikki variantdan birini tanlashni so'ra",
-    "undan qiyinroq yangi savol yoki test taklif qilib, 'tayyormisiz?' kabi tugat",
-    "hazil bilan kichik bahs och (masalan: 'tan oling, ...')",
-    "uning fikrini so'ra: sizningcha nega shunday?",
-    "qisqa hazil qil va 'yana bir marta urinib ko'rasizmi?' kabi chaqiriq bilan tugat",
-]
 SUMMARY = os.environ.get('GITHUB_STEP_SUMMARY')
 
 
@@ -81,23 +71,27 @@ def ts(s):
 SYSTEM = """Sen med.comix Instagram sahifasining admini nomidan izohlarga javob yozasan.
 med.comix — tana va tibbiyot haqidagi qiziqarli faktlarni o'zbek tilida komiks uslubida ko'rsatadigan Reels sahifa.
 
-Maqsad: izoh yozgan odam yana izoh yozishi, suhbat davom etishi.
-Har bir javob:
-- 1–2 qisqa gap, 60–140 belgi. Uzun tushuntirish, hisob-kitobni to'liq yozish kerak emas.
-- Odamning aynan nima deganiga javob bo'lsin, umumiy shablon emas.
-- Oxiri savol, kichik bahs yoki chaqiriq bilan tugasin. Masalan: uning tajribasini so'ra, "do'stingizni belgilang, u nima der ekan?" de, keyingi qiyinroq savolni taklif qil, ikki variantdan birini tanlashni so'ra.
-- Iliq, jonli, oddiy odam yozgandek. Kitobiy so'zlar yo'q.
-- Har safar boshqacha boshla: "Zo'r savol", "Rahmat" kabi bir xil kirishlarni takrorlama.
-- Odam qaysi tilda va qaysi alifboda yozgan bo'lsa, o'shanda javob ber: kirill harflarida yozsa — kirillda, lotinda yozsa — lotinda, ruscha yozsa — ruscha.
-- Ko'chadagi oddiy gap kabi yoz: "sho'ng'idi", "bo'shatdingiz", "ko'paytirib yubordingiz" kabi g'alati so'zlar yo'q.
+Maqsad: odam yana izoh yozishi uchun unga qisqa va qiziqarli savol berish.
+Javob qoidasi:
+- Faqat BITTA qisqa savol, 4–12 so'z. Tushuntirish, maqtov, fakt yoki uzun gap yozma.
+- Savol aynan uning izohidan kelib chiqsin, unga javob berish oson va qiziq bo'lsin.
+- Oddiy, jonli, do'stona so'zlashuv tili. Kitobiy yoki g'alati so'zlar yo'q.
+- Har safar boshqacha savol ber, bir xil shablonni takrorlama.
+- Odam qaysi tilda va alifboda yozgan bo'lsa, o'shanda yoz (kirillda yozsa — kirillda, ruscha bo'lsa — ruscha).
+- Emoji odatda qo'yma. Faqat izohda hazil, kulgi yoki emoji bo'lsa, bitta mos emoji qo'yish mumkin.
+
+Misollar:
+- Izoh: "5000" → Qaysi joyda yana 1000 qo'shib yubordingiz?
+- Izoh: "menda chiqdi" → Ikkala qo'lingizda ham chiqdimi?
+- Izoh: "voy rostdanmi 😂" → Do'stingiz ham ishondimi, sinab ko'rdingizmi? 😂
 
 Qat'iy qoidalar:
-- Tashxis qo'yma, dori yoki davolash tavsiya qilma. Sog'lig'i haqida jiddiy savol bo'lsa, qisqa iliq javob ber va shifokorga ko'rinishni maslahat qil.
+- Tashxis qo'yma, dori tavsiya qilma. Jiddiy sog'liq savoliga: "Bu haqda shifokorga ko'ringaningiz ma'qul, o'zingizni qanday his qilyapsiz?" kabi qisqa javob ber.
 - Konkurs, sovg'a, Telegram Premium haqida hech narsa va'da qilma.
-- Video haqidagi faktlarni faqat quyidagi "Video haqida" qismidan ol. Bilmasang, o'ylab topma — savol bilan javob ber.
+- Video haqidagi faktlarni faqat "Video haqida" qismidan ol, o'ylab topma.
 - "Botmisan?" deb jiddiy so'rashsa, rostini ayt: admin yordamchisi, sun'iy intellekt.
 - Haqorat, spam, reklama, mazmunsiz belgilar, siyosat yoki boshqa odamni kamsitadigan izoh bo'lsa — faqat SKIP deb yoz.
-- Javobni faqat o'zini yoz: qo'shtirnoq, izoh, @username yo'q (uni dastur o'zi qo'shadi)."""
+- Faqat savolning o'zini yoz: qo'shtirnoq, izoh, @username yo'q."""
 
 
 def claude(video, thread, target):
@@ -109,9 +103,7 @@ Izohlar zanjiri (eskidan yangiga):
 {convo}
 
 Endi @{target['username'] or 'tomoshabin'} ning oxirgi izohiga javob yoz (yoki SKIP).
-Javob oxiri uchun yo'nalish (tabiiy chiqsa shunday qil, chiqmasa o'zing oddiy savol ber): {random.choice(HOOKS)}.
-Savol xuddi do'stingiz bilan gaplashgandek oddiy bo'lsin, shablon emas.
-{'Bitta emoji qo\'ysang bo\'ladi.' if random.random() < 0.25 else 'Emoji ishlatma.'}"""
+Faqat bitta qisqa savol yoz."""
     res = http('https://api.anthropic.com/v1/messages', {
         'model': MODEL, 'max_tokens': 400, 'system': SYSTEM,
         'thinking': {'type': 'disabled'},  # short replies need no thinking; thinking would eat max_tokens
@@ -122,6 +114,11 @@ Savol xuddi do'stingiz bilan gaplashgandek oddiy bo'lsin, shablon emas.
     for e in emo[1:]:
         txt = txt.replace(e, '', 1)
     txt = re.sub(r'\s{2,}', ' ', txt).strip()
+    m = re.match(r'(.+?\?)(\s*[\U0001F300-\U0001FAFF\u2600-\u27BF])?', txt, re.S)
+    if m:                                               # keep only the first question (and its emoji, if any)
+        txt = (m.group(1).split('. ')[-1] + (m.group(2) or '')).strip()
+    elif len(txt) > 100:
+        txt = re.split(r'(?<=[.!])\s', txt)[0]
     if res.get('stop_reason') == 'max_tokens' or not txt:
         raise RuntimeError(f"javob chala: stop_reason={res.get('stop_reason')}, matn={txt[:40]!r}")
     return txt
@@ -148,8 +145,15 @@ def main():
     if not TOKEN or not KEY:
         sys.exit('IG_TOKEN yoki ANTHROPIC_API_KEY topilmadi (GitHub Secrets).')
     notes = json.load(open(os.path.join(HERE, 'videos.json'), encoding='utf-8'))
-    me = ig_get('me', fields='user_id,username')
+    me = ig_get('me', fields='id,user_id,username')
     my_name = me['username'].lower()
+    my_ids = {str(v) for v in (me.get('id'), me.get('user_id')) if v}
+    def mark(x):
+        fr = x.get('from') or {}
+        x['username'] = x.get('username') or fr.get('username') or ''
+        x['ours'] = x['username'].lower() == my_name or str(fr.get('id') or '') in my_ids
+        x['text'] = (x.get('text') or '').strip()
+        return x
     print(f"Akkaunt: @{me['username']} | model {MODEL} | {'SINOV (javob yozmaydi)' if DRY else 'JONLI'} | oyna {WINDOW} soat")
     cutoff = datetime.now(timezone.utc) - timedelta(hours=WINDOW)
     media = ig_get('me/media', fields='id,caption,permalink,timestamp,comments_count,shortcode', limit=MEDIA_LIMIT).get('data', [])
@@ -158,17 +162,14 @@ def main():
     cands = []
     for m in media:
         code = m.get('shortcode') or m.get('permalink', '').rstrip('/').split('/')[-1]
-        video = notes.get(code) or f"Video matni (caption): {m.get('caption', '')}"
-        comments = ig_all(f"{m['id']}/comments", fields='id,text,timestamp,username,from,like_count,replies.limit(50){id,text,timestamp,username,from,like_count}', limit=50)
+        video = notes.get(code) or notes.get('caption:' + (m.get('caption') or '').strip()) or f"Video matni (caption): {m.get('caption', '')}"
+        comments = ig_all(f"{m['id']}/comments", fields='id,text,timestamp,username,from,like_count,parent_id,replies.limit(50){id,text,timestamp,username,from,like_count}', limit=50)
         print(f"[{code}] {m.get('timestamp', '')[:16]} | Instagram'dagi izohlar: {m.get('comments_count')} | API bergan: {len(comments)}"
               + (f" | ro'yxat boshi {comments[0]['timestamp'][:16]}, oxiri {comments[-1]['timestamp'][:16]}" if comments else ''))
         for c in comments:
-            thread = [c] + sorted((c.get('replies') or {}).get('data', []), key=lambda r: r['timestamp'])
-            for x in thread:
-                fr = x.get('from') or {}
-                x['username'] = x.get('username') or fr.get('username') or ''
-                x['ours'] = bool(x['username'].lower() == my_name or (fr.get('id') and fr.get('id') == me.get('user_id')))
-                x['text'] = (x.get('text') or '').strip()
+            if c.get('parent_id'): continue                  # a reply listed on its own: it is handled inside its thread
+            if mark(c)['ours']: continue                     # our own top-level comment
+            thread = [c] + sorted((mark(r) for r in (c.get('replies') or {}).get('data', [])), key=lambda r: r['timestamp'])
             last = thread[-1]
             if last['ours'] or not last['text'] or ts(last['timestamp']) < cutoff: continue
             ours = sum(x['ours'] for x in thread)
@@ -180,6 +181,14 @@ def main():
     done, rows, errs, calls = 0, [], 0, 0
     for sc, code, video, c, thread, last in cands:
         if done >= MAX_REPLIES or calls >= MAX_REPLIES + 15: break
+        # read the thread again right now, straight from the replies edge, so we never answer twice or answer ourselves
+        try:
+            live = [mark(r) for r in ig_all(f"{c['id']}/replies", pages=2, fields='id,text,timestamp,username,from', limit=50)]
+        except Exception as e:
+            print('Javoblarni o\'qib bo\'lmadi, o\'tkazib yuborildi:', e); continue
+        thread = [c] + sorted(live, key=lambda r: r['timestamp'])
+        last = thread[-1]
+        if last['ours'] or sum(x['ours'] for x in thread) >= MAX_PER_THREAD: continue
         calls += 1
         t0 = time.time()
         try:
