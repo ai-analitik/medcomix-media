@@ -1,0 +1,45 @@
+# Every 6 hours: pull Instagram insights (views, reach, saves, shares, reposts,
+# average watch time, 3-second skip rate, audience) and commit them to stats/data/.
+name: insights
+
+on:
+  schedule:
+    - cron: '41 */6 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'stats/insights.py'
+      - '.github/workflows/insights.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: insights
+  cancel-in-progress: false
+
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch insights
+        run: python -u stats/insights.py
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_TOKEN_TECHCOMIX: ${{ secrets.IG_TOKEN_TECHCOMIX }}
+          IG_TOKEN_360COMIX: ${{ secrets.IG_TOKEN_360COMIX }}
+      - name: Commit if changed
+        run: |
+          git config user.name "medcomix-stats-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add stats/data
+          git diff --cached --quiet && exit 0
+          git commit -m "stats: insights update"
+          git pull --rebase -q origin main
+          git push origin HEAD:main
