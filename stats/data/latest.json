@@ -1,0 +1,9 @@
+{
+ "generated_at": "2026-10-20T03:44:34+00:00",
+ "accounts": {
+  "medcomix": {
+   "stale": true,
+   "fatal_error": "me v24.0: 200: API access blocked.; me v23.0: 200: API access blocked."
+  }
+ }
+}
