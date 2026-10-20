@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-20T04:01:17+00:00",
+ "generated_at": "2026-10-20T04:03:32+00:00",
  "accounts": {
   "medcomix": {
    "api_version": "v24.0",
@@ -12,7 +12,7 @@
    },
    "totals_7d": {
     "reach": 2310352,
-    "views": 8184899,
+    "views": 8185748,
     "accounts_engaged": 175386,
     "total_interactions": 639984,
     "likes": 170835,
@@ -24,7 +24,7 @@
    },
    "totals_30d": {
     "reach": 2410352,
-    "views": 8618247,
+    "views": 8619096,
     "accounts_engaged": 184670,
     "total_interactions": 674559,
     "likes": 179224,
@@ -208,84 +208,7 @@
      "end_time": "2026-10-19T07:00:00+0000"
     }
    ],
-   "demographics": {
-    "follower_demographics": {
-     "age": {
-      "breakdowns": [
-       {
-        "dimension_keys": [
-         "age"
-        ]
-       }
-      ]
-     },
-     "gender": {
-      "breakdowns": [
-       {
-        "dimension_keys": [
-         "gender"
-        ]
-       }
-      ]
-     },
-     "city": {
-      "breakdowns": [
-       {
-        "dimension_keys": [
-         "city"
-        ]
-       }
-      ]
-     },
-     "country": {
-      "breakdowns": [
-       {
-        "dimension_keys": [
-         "country"
-        ]
-       }
-      ]
-     }
-    },
-    "engaged_audience_demographics": {
-     "age": {
-      "breakdowns": [
-       {
-        "dimension_keys": [
-         "age"
-        ]
-       }
-      ]
-     },
-     "gender": {
-      "breakdowns": [
-       {
-        "dimension_keys": [
-         "gender"
-        ]
-       }
-      ]
-     },
-     "city": {
-      "breakdowns": [
-       {
-        "dimension_keys": [
-         "city"
-        ]
-       }
-      ]
-     },
-     "country": {
-      "breakdowns": [
-       {
-        "dimension_keys": [
-         "country"
-        ]
-       }
-      ]
-     }
-    }
-   },
+   "demographics": {},
    "media": [
     {
      "id": "17924189424432712",
@@ -293,16 +216,16 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeriOHrgtgu/",
      "posted_at": "2026-10-19T15:04:29+0000",
-     "age_h": 12.9,
+     "age_h": 13.0,
      "caption": "Siz qaysi hujayra bo'lardingiz?",
-     "like_count": 339,
+     "like_count": 340,
      "comments_count": 11,
      "insights": {
-      "views": 16897,
+      "views": 16928,
       "reach": 12614,
-      "likes": 339,
+      "likes": 340,
       "comments": 11,
-      "shares": 12,
+      "shares": 11,
       "saved": 15,
       "total_interactions": 393,
       "ig_reels_avg_watch_time": 23389,
@@ -318,16 +241,16 @@
      "posted_at": "2026-10-19T13:03:43+0000",
      "age_h": 15.0,
      "caption": "Aybdormi yoki aybsiz?",
-     "like_count": 1232,
+     "like_count": 1235,
      "comments_count": 68,
      "insights": {
-      "views": 65695,
+      "views": 65763,
       "reach": 55317,
-      "likes": 1232,
+      "likes": 1235,
       "comments": 68,
-      "shares": 368,
+      "shares": 353,
       "saved": 60,
-      "total_interactions": 1786,
+      "total_interactions": 1774,
       "ig_reels_avg_watch_time": 21136,
       "ig_reels_video_view_total_time": 1180584538,
       "reels_skip_rate": 23.1
@@ -341,18 +264,18 @@
      "posted_at": "2026-10-19T11:03:40+0000",
      "age_h": 17.0,
      "caption": "Siz qaysi organni ko'proq qiynayapsiz?",
-     "like_count": 2273,
+     "like_count": 2274,
      "comments_count": 75,
      "insights": {
-      "views": 84096,
+      "views": 84130,
       "reach": 69018,
-      "likes": 2273,
+      "likes": 2274,
       "comments": 75,
-      "shares": 1384,
+      "shares": 1369,
       "saved": 91,
-      "total_interactions": 3931,
-      "ig_reels_avg_watch_time": 21431,
-      "ig_reels_video_view_total_time": 1525568047,
+      "total_interactions": 3917,
+      "ig_reels_avg_watch_time": 21440,
+      "ig_reels_video_view_total_time": 1530109688,
       "reels_skip_rate": 26.4
      }
     },
@@ -367,13 +290,13 @@
      "like_count": 381,
      "comments_count": 7,
      "insights": {
-      "views": 24646,
+      "views": 24649,
       "reach": 21430,
       "likes": 381,
       "comments": 7,
-      "shares": 86,
+      "shares": 85,
       "saved": 58,
-      "total_interactions": 549,
+      "total_interactions": 548,
       "ig_reels_avg_watch_time": 16683,
       "ig_reels_video_view_total_time": 358025015,
       "reels_skip_rate": 31.8
@@ -390,12 +313,12 @@
      "like_count": 492,
      "comments_count": 4,
      "insights": {
-      "views": 25844,
+      "views": 25864,
       "reach": 22113,
       "likes": 492,
       "comments": 4,
-      "shares": 138,
-      "saved": 176,
+      "shares": 137,
+      "saved": 177,
       "total_interactions": 854,
       "ig_reels_avg_watch_time": 16002,
       "ig_reels_video_view_total_time": 358554928,
@@ -410,16 +333,16 @@
      "posted_at": "2026-10-18T16:00:55+0000",
      "age_h": 36.0,
      "caption": "Siz necha kun dedingiz?",
-     "like_count": 7312,
-     "comments_count": 557,
+     "like_count": 7313,
+     "comments_count": 558,
      "insights": {
-      "views": 276359,
+      "views": 276376,
       "reach": 214103,
-      "likes": 7312,
-      "comments": 557,
-      "shares": 5007,
+      "likes": 7313,
+      "comments": 558,
+      "shares": 4972,
       "saved": 538,
-      "total_interactions": 13927,
+      "total_interactions": 13894,
       "ig_reels_avg_watch_time": 25972,
       "ig_reels_video_view_total_time": 5877615634,
       "reels_skip_rate": 27.1
@@ -436,13 +359,13 @@
      "like_count": 17222,
      "comments_count": 3545,
      "insights": {
-      "views": 757595,
+      "views": 757690,
       "reach": 596125,
-      "likes": 17222,
+      "likes": 17223,
       "comments": 3545,
-      "shares": 20193,
+      "shares": 20251,
       "saved": 1531,
-      "total_interactions": 44136,
+      "total_interactions": 44197,
       "ig_reels_avg_watch_time": 28180,
       "ig_reels_video_view_total_time": 17174727741,
       "reels_skip_rate": 34.7
@@ -459,7 +382,7 @@
      "like_count": 5218,
      "comments_count": 473,
      "insights": {
-      "views": 366449,
+      "views": 366464,
       "reach": 288394,
       "likes": 5218,
       "comments": 473,
@@ -477,21 +400,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Deo0xIdAgyR/",
      "posted_at": "2026-10-18T13:47:59+0000",
-     "age_h": 38.2,
+     "age_h": 38.3,
      "caption": "Necha marta qashindingiz?",
-     "like_count": 2500,
-     "comments_count": 2040,
+     "like_count": 2501,
+     "comments_count": 2041,
      "insights": {
-      "views": 142348,
-      "reach": 107009,
-      "likes": 2500,
-      "comments": 2040,
+      "views": 142371,
+      "reach": 107053,
+      "likes": 2501,
+      "comments": 2041,
       "shares": 751,
       "saved": 125,
-      "total_interactions": 5563,
+      "total_interactions": 5565,
       "ig_reels_avg_watch_time": 26394,
       "ig_reels_video_view_total_time": 2948793298,
-      "reels_skip_rate": 23.7
+      "reels_skip_rate": 23.8
      }
     },
     {
@@ -505,7 +428,7 @@
      "like_count": 556,
      "comments_count": 217,
      "insights": {
-      "views": 63679,
+      "views": 63689,
       "reach": 50404,
       "likes": 556,
       "comments": 217,
@@ -528,7 +451,7 @@
      "like_count": 1087,
      "comments_count": 134,
      "insights": {
-      "views": 66996,
+      "views": 66997,
       "reach": 47708,
       "likes": 1087,
       "comments": 134,
@@ -551,15 +474,15 @@
      "like_count": 1705,
      "comments_count": 563,
      "insights": {
-      "views": 147843,
-      "reach": 117150,
+      "views": 147849,
+      "reach": 117167,
       "likes": 1705,
       "comments": 563,
       "shares": 306,
       "saved": 93,
       "total_interactions": 2779,
-      "ig_reels_avg_watch_time": 21574,
-      "ig_reels_video_view_total_time": 2613610736,
+      "ig_reels_avg_watch_time": 21575,
+      "ig_reels_video_view_total_time": 2614304320,
       "reels_skip_rate": 31.3
      }
     },
@@ -569,12 +492,12 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DemIT-IFHmZ/",
      "posted_at": "2026-10-17T12:41:06+0000",
-     "age_h": 63.3,
+     "age_h": 63.4,
      "caption": "Qaysi tomoni ochiqroq?",
      "like_count": 2010,
      "comments_count": 546,
      "insights": {
-      "views": 163702,
+      "views": 163705,
       "reach": 125906,
       "likes": 2010,
       "comments": 546,
@@ -597,15 +520,15 @@
      "like_count": 360,
      "comments_count": 25,
      "insights": {
-      "views": 27073,
-      "reach": 21668,
+      "views": 27074,
+      "reach": 21675,
       "likes": 360,
       "comments": 25,
       "shares": 68,
       "saved": 38,
       "total_interactions": 511,
-      "ig_reels_avg_watch_time": 22088,
-      "ig_reels_video_view_total_time": 494949724,
+      "ig_reels_avg_watch_time": 22087,
+      "ig_reels_video_view_total_time": 495087778,
       "reels_skip_rate": 21.9
      }
     },
@@ -620,13 +543,13 @@
      "like_count": 1870,
      "comments_count": 64,
      "insights": {
-      "views": 148873,
+      "views": 148880,
       "reach": 116544,
       "likes": 1870,
       "comments": 64,
-      "shares": 6641,
+      "shares": 6637,
       "saved": 111,
-      "total_interactions": 8764,
+      "total_interactions": 8760,
       "ig_reels_avg_watch_time": 21220,
       "ig_reels_video_view_total_time": 2531718684,
       "reels_skip_rate": 30.1
@@ -643,13 +566,13 @@
      "like_count": 4343,
      "comments_count": 761,
      "insights": {
-      "views": 573029,
+      "views": 573088,
       "reach": 415473,
       "likes": 4343,
       "comments": 761,
-      "shares": 8892,
+      "shares": 8886,
       "saved": 688,
-      "total_interactions": 15390,
+      "total_interactions": 15384,
       "ig_reels_avg_watch_time": 24798,
       "ig_reels_video_view_total_time": 10710837410,
       "reels_skip_rate": 26.3
@@ -666,15 +589,15 @@
      "like_count": 14021,
      "comments_count": 4231,
      "insights": {
-      "views": 705407,
-      "reach": 534323,
+      "views": 705431,
+      "reach": 534447,
       "likes": 14021,
       "comments": 4231,
-      "shares": 11756,
+      "shares": 11751,
       "saved": 1090,
-      "total_interactions": 31944,
+      "total_interactions": 31939,
       "ig_reels_avg_watch_time": 25954,
-      "ig_reels_video_view_total_time": 14008814117,
+      "ig_reels_video_view_total_time": 14012173588,
       "reels_skip_rate": 32.7
      }
     },
@@ -689,7 +612,7 @@
      "like_count": 4901,
      "comments_count": 1024,
      "insights": {
-      "views": 158658,
+      "views": 158661,
       "reach": 126888,
       "likes": 4901,
       "comments": 1024,
@@ -712,13 +635,13 @@
      "like_count": 2921,
      "comments_count": 311,
      "insights": {
-      "views": 251998,
+      "views": 252010,
       "reach": 191621,
       "likes": 2921,
       "comments": 311,
-      "shares": 3252,
+      "shares": 3251,
       "saved": 679,
-      "total_interactions": 7612,
+      "total_interactions": 7611,
       "ig_reels_avg_watch_time": 27922,
       "ig_reels_video_view_total_time": 5559727563,
       "reels_skip_rate": 29
@@ -735,7 +658,7 @@
      "like_count": 1001,
      "comments_count": 89,
      "insights": {
-      "views": 75933,
+      "views": 75936,
       "reach": 54176,
       "likes": 1001,
       "comments": 89,
@@ -753,18 +676,18 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DecSho6NSl6/",
      "posted_at": "2026-10-13T16:59:29+0000",
-     "age_h": 155.0,
+     "age_h": 155.1,
      "caption": "Necha soniya chiday oldingiz?",
      "like_count": 909,
-     "comments_count": 645,
+     "comments_count": 646,
      "insights": {
-      "views": 91614,
+      "views": 91617,
       "reach": 66125,
       "likes": 909,
-      "comments": 645,
+      "comments": 646,
       "shares": 288,
       "saved": 103,
-      "total_interactions": 2020,
+      "total_interactions": 2021,
       "ig_reels_avg_watch_time": 39998,
       "ig_reels_video_view_total_time": 2783064017,
       "reels_skip_rate": 28.3
@@ -781,11 +704,11 @@
      "like_count": 6289,
      "comments_count": 6081,
      "insights": {
-      "views": 427788,
+      "views": 427807,
       "reach": 313722,
-      "likes": 6289,
+      "likes": 6290,
       "comments": 6081,
-      "shares": 3249,
+      "shares": 3248,
       "saved": 529,
       "total_interactions": 16624,
       "ig_reels_avg_watch_time": 38409,
@@ -804,7 +727,7 @@
      "like_count": 3673,
      "comments_count": 243,
      "insights": {
-      "views": 194805,
+      "views": 194816,
       "reach": 140419,
       "likes": 3673,
       "comments": 243,
@@ -827,7 +750,7 @@
      "like_count": 2107,
      "comments_count": 292,
      "insights": {
-      "views": 87551,
+      "views": 87553,
       "reach": 57552,
       "likes": 2107,
       "comments": 292,
@@ -845,18 +768,18 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeZopCtNNaU/",
      "posted_at": "2026-10-12T16:17:12+0000",
-     "age_h": 179.7,
+     "age_h": 179.8,
      "caption": "Sutmi yoki Suv?",
      "like_count": 42279,
      "comments_count": 8378,
      "insights": {
-      "views": 2467204,
+      "views": 2467241,
       "reach": 1939993,
-      "likes": 42279,
+      "likes": 42280,
       "comments": 8378,
-      "shares": 110843,
-      "saved": 5077,
-      "total_interactions": 171285,
+      "shares": 110823,
+      "saved": 5078,
+      "total_interactions": 171267,
       "ig_reels_avg_watch_time": 23872,
       "ig_reels_video_view_total_time": 46831965258,
       "reels_skip_rate": 38.9
@@ -877,11 +800,11 @@
       "reach": 34619,
       "likes": 685,
       "comments": 42,
-      "shares": 536,
+      "shares": 535,
       "saved": 42,
-      "total_interactions": 1334,
+      "total_interactions": 1333,
       "ig_reels_avg_watch_time": 32689,
-      "ig_reels_video_view_total_time": 1178748740,
+      "ig_reels_video_view_total_time": 1178855845,
       "reels_skip_rate": 23.7
      }
     },
@@ -896,7 +819,7 @@
      "like_count": 751,
      "comments_count": 416,
      "insights": {
-      "views": 100920,
+      "views": 100921,
       "reach": 72606,
       "likes": 751,
       "comments": 416,
@@ -919,7 +842,7 @@
      "like_count": 1103,
      "comments_count": 132,
      "insights": {
-      "views": 82315,
+      "views": 82317,
       "reach": 63287,
       "likes": 1103,
       "comments": 132,
@@ -942,13 +865,13 @@
      "like_count": 2002,
      "comments_count": 171,
      "insights": {
-      "views": 124850,
-      "reach": 100698,
+      "views": 124852,
+      "reach": 100721,
       "likes": 2002,
       "comments": 171,
-      "shares": 1623,
+      "shares": 1622,
       "saved": 261,
-      "total_interactions": 4185,
+      "total_interactions": 4184,
       "ig_reels_avg_watch_time": 35221,
       "ig_reels_video_view_total_time": 3621612389,
       "reels_skip_rate": 22.9
@@ -965,7 +888,7 @@
      "like_count": 13724,
      "comments_count": 3598,
      "insights": {
-      "views": 767385,
+      "views": 767395,
       "reach": 593170,
       "likes": 13724,
       "comments": 3598,
@@ -983,12 +906,12 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeV8uIPtNer/",
      "posted_at": "2026-10-11T05:52:58+0000",
-     "age_h": 214.1,
+     "age_h": 214.2,
      "caption": "Protein tabiiymi?",
      "like_count": 3694,
      "comments_count": 53,
      "insights": {
-      "views": 111442,
+      "views": 111444,
       "reach": 87849,
       "likes": 3694,
       "comments": 53,
@@ -1071,7 +994,16 @@
      "fail": 0
     }
    },
-   "errors": []
+   "errors": [
+    "follower_demographics/age: empty for all timeframes",
+    "follower_demographics/gender: empty for all timeframes",
+    "follower_demographics/city: empty for all timeframes",
+    "follower_demographics/country: empty for all timeframes",
+    "engaged_audience_demographics/age/prev_month: 3006: Not enough users",
+    "engaged_audience_demographics/gender/prev_month: 3006: Not enough users",
+    "engaged_audience_demographics/city/prev_month: 3006: Not enough users",
+    "engaged_audience_demographics/country/prev_month: 3006: Not enough users"
+   ]
   }
  }
 }
