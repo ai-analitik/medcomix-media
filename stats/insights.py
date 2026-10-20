@@ -161,14 +161,26 @@ def account(tok):
         since=ts(now - timedelta(days=29)), until=ts(now - timedelta(days=1)))).get('follower_count'))
     acc['online_followers'] = try_block(errors, 'online_followers', lambda: values(call(
         f'{uid}/insights', tok, metric='online_followers', period='lifetime')).get('online_followers'))
+    def has_results(r):
+        return isinstance(r, dict) and any(b.get('results') for b in r.get('breakdowns', []))
+
     demo = {}
     for metric in ('follower_demographics', 'engaged_audience_demographics'):
         for bd in ('age', 'gender', 'city', 'country'):
-            r = try_block(errors, f'{metric}/{bd}', lambda: values(call(
-                f'{uid}/insights', tok, metric=metric, period='lifetime', metric_type='total_value',
-                timeframe='this_month', breakdown=bd)).get(metric))
-            if r is not None:
-                demo.setdefault(metric, {})[bd] = r
+            last_err = f'{metric}/{bd}: empty for all timeframes'
+            for tf in ('this_month', 'this_week', 'last_30_days', 'last_90_days', 'prev_month', None):
+                extra = {'timeframe': tf} if tf else {}
+                try:
+                    r = values(call(f'{uid}/insights', tok, metric=metric, period='lifetime',
+                                    metric_type='total_value', breakdown=bd, **extra)).get(metric)
+                except ApiError as e:
+                    r = None
+                    last_err = f'{metric}/{bd}/{tf}: {e}'
+                if has_results(r):
+                    demo.setdefault(metric, {})[bd] = {'timeframe': tf, **r}
+                    break
+            else:
+                errors.append(last_err)
     acc['demographics'] = demo
 
     items, url, first = [], 'me/media', True
