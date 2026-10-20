@@ -1,6 +1,6 @@
 """Instagram insights dump for med.comix (and sister channels).
 
-Runs in GitHub Actions (.github/workflows/insights.yml) every 6 hours.
+Runs in GitHub Actions (.github/workflows/insights.yml) every 6 hours and on changes to this file.
 Writes:
   stats/data/latest.json          full snapshot: account totals, audience, every post with its insights
   stats/data/posts_history.csv    one row per post per run (posts younger than 30 days) -> growth curves
