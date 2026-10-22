@@ -1,36 +1,36 @@
 {
- "generated_at": "2026-10-21T19:14:22+00:00",
+ "generated_at": "2026-10-22T01:14:26+00:00",
  "accounts": {
   "medcomix": {
    "api_version": "v24.0",
    "profile": {
     "username": "med.comix",
     "name": "med.comix | Savollarga tibbiy javob oling 🩺",
-    "followers_count": 25965,
+    "followers_count": 26046,
     "follows_count": 3,
     "media_count": 42
    },
    "totals_7d": {
-    "reach": 1781695,
-    "views": 7424045,
-    "accounts_engaged": 139224,
-    "total_interactions": 487182,
-    "likes": 151605,
-    "comments": 29460,
-    "shares": 141895,
-    "saves": 11662,
+    "reach": 1793304,
+    "views": 7492991,
+    "accounts_engaged": 140226,
+    "total_interactions": 490274,
+    "likes": 153271,
+    "comments": 29682,
+    "shares": 142405,
+    "saves": 11773,
     "replies": 115,
     "profile_links_taps": 0
    },
    "totals_30d": {
-    "reach": 2549397,
-    "views": 10209626,
-    "accounts_engaged": 205041,
-    "total_interactions": 752695,
-    "likes": 209061,
-    "comments": 41242,
-    "shares": 235280,
-    "saves": 17162,
+    "reach": 2555183,
+    "views": 10278574,
+    "accounts_engaged": 206015,
+    "total_interactions": 755786,
+    "likes": 210726,
+    "comments": 41464,
+    "shares": 235790,
+    "saves": 17273,
     "replies": 140,
     "profile_links_taps": 0
    },
@@ -184,6 +184,632 @@
     }
    ],
    "demographics": {
+    "follower_demographics": {
+     "age": {
+      "timeframe": "this_month",
+      "breakdowns": [
+       {
+        "dimension_keys": [
+         "age"
+        ],
+        "results": [
+         {
+          "dimension_values": [
+           "13-17"
+          ],
+          "value": 4177
+         },
+         {
+          "dimension_values": [
+           "18-24"
+          ],
+          "value": 4364
+         },
+         {
+          "dimension_values": [
+           "25-34"
+          ],
+          "value": 7918
+         },
+         {
+          "dimension_values": [
+           "35-44"
+          ],
+          "value": 5229
+         },
+         {
+          "dimension_values": [
+           "45-54"
+          ],
+          "value": 1211
+         },
+         {
+          "dimension_values": [
+           "55-64"
+          ],
+          "value": 470
+         },
+         {
+          "dimension_values": [
+           "65+"
+          ],
+          "value": 412
+         }
+        ]
+       }
+      ]
+     },
+     "gender": {
+      "timeframe": "this_month",
+      "breakdowns": [
+       {
+        "dimension_keys": [
+         "gender"
+        ],
+        "results": [
+         {
+          "dimension_values": [
+           "F"
+          ],
+          "value": 2756
+         },
+         {
+          "dimension_values": [
+           "M"
+          ],
+          "value": 5060
+         },
+         {
+          "dimension_values": [
+           "U"
+          ],
+          "value": 15965
+         }
+        ]
+       }
+      ]
+     },
+     "city": {
+      "timeframe": "this_month",
+      "breakdowns": [
+       {
+        "dimension_keys": [
+         "city"
+        ],
+        "results": [
+         {
+          "dimension_values": [
+           "Yangiyul, Tashkent Region"
+          ],
+          "value": 236
+         },
+         {
+          "dimension_values": [
+           "Gazalkent, Tashkent Region"
+          ],
+          "value": 174
+         },
+         {
+          "dimension_values": [
+           "Navoi, Navoiy Region"
+          ],
+          "value": 640
+         },
+         {
+          "dimension_values": [
+           "Shakhrisabz, Qashqadaryo Region"
+          ],
+          "value": 523
+         },
+         {
+          "dimension_values": [
+           "Urtaaul, Tashkent Region"
+          ],
+          "value": 119
+         },
+         {
+          "dimension_values": [
+           "Chirchik, Tashkent Region"
+          ],
+          "value": 186
+         },
+         {
+          "dimension_values": [
+           "Angren, Tashkent Region"
+          ],
+          "value": 290
+         },
+         {
+          "dimension_values": [
+           "Proletarsk, Sughd Region"
+          ],
+          "value": 102
+         },
+         {
+          "dimension_values": [
+           "Asaka, Andijan Region"
+          ],
+          "value": 201
+         },
+         {
+          "dimension_values": [
+           "Yangier, Sirdaryo Region"
+          ],
+          "value": 3379
+         },
+         {
+          "dimension_values": [
+           "Moscow, Moscow"
+          ],
+          "value": 356
+         },
+         {
+          "dimension_values": [
+           "Almalyk, Tashkent Region"
+          ],
+          "value": 201
+         },
+         {
+          "dimension_values": [
+           "Dushanbe, Districts of Republican Subordination"
+          ],
+          "value": 227
+         },
+         {
+          "dimension_values": [
+           "Samarkand, Samarqand Region"
+          ],
+          "value": 729
+         },
+         {
+          "dimension_values": [
+           "Andijan, Andijan Region"
+          ],
+          "value": 776
+         },
+         {
+          "dimension_values": [
+           "Nukus, Karakalpakstan"
+          ],
+          "value": 329
+         },
+         {
+          "dimension_values": [
+           "Namangan, Namangan Region"
+          ],
+          "value": 473
+         },
+         {
+          "dimension_values": [
+           "Chita, Zabaykalsky Krai"
+          ],
+          "value": 110
+         },
+         {
+          "dimension_values": [
+           "Margilan, Fergana Region"
+          ],
+          "value": 105
+         },
+         {
+          "dimension_values": [
+           "Gulistan, Sirdaryo Region"
+          ],
+          "value": 264
+         },
+         {
+          "dimension_values": [
+           "Kokan, Fergana Region"
+          ],
+          "value": 317
+         },
+         {
+          "dimension_values": [
+           "Shymkent, South Kazakhstan Region"
+          ],
+          "value": 117
+         },
+         {
+          "dimension_values": [
+           "Yaypan, Fergana Region"
+          ],
+          "value": 715
+         },
+         {
+          "dimension_values": [
+           "Guliston, Sirdaryo Region"
+          ],
+          "value": 278
+         },
+         {
+          "dimension_values": [
+           "Khonobod, Andijan Region"
+          ],
+          "value": 303
+         },
+         {
+          "dimension_values": [
+           "Olmaliq, Tashkent Region"
+          ],
+          "value": 503
+         },
+         {
+          "dimension_values": [
+           "Kitab, Qashqadaryo Region"
+          ],
+          "value": 221
+         },
+         {
+          "dimension_values": [
+           "Gurlan, Xorazm Region"
+          ],
+          "value": 256
+         },
+         {
+          "dimension_values": [
+           "Zomin, Jizzakh Region"
+          ],
+          "value": 345
+         },
+         {
+          "dimension_values": [
+           "Osh, Osh Region"
+          ],
+          "value": 351
+         },
+         {
+          "dimension_values": [
+           "Mangit, Karakalpakstan"
+          ],
+          "value": 101
+         },
+         {
+          "dimension_values": [
+           "Dustlik, Jizzakh Region"
+          ],
+          "value": 120
+         },
+         {
+          "dimension_values": [
+           "Karshi, Qashqadaryo Region"
+          ],
+          "value": 136
+         },
+         {
+          "dimension_values": [
+           "Loyish, Samarqand Region"
+          ],
+          "value": 149
+         },
+         {
+          "dimension_values": [
+           "Fergana, Fergana Region"
+          ],
+          "value": 370
+         },
+         {
+          "dimension_values": [
+           "Turtkul, Karakalpakstan"
+          ],
+          "value": 592
+         },
+         {
+          "dimension_values": [
+           "Romitan, Bukhara Region"
+          ],
+          "value": 1671
+         },
+         {
+          "dimension_values": [
+           "Ohangaron, Tashkent Region"
+          ],
+          "value": 232
+         },
+         {
+          "dimension_values": [
+           "Zarafshan, Navoiy Region"
+          ],
+          "value": 865
+         },
+         {
+          "dimension_values": [
+           "Qarshi, Qashqadaryo Region"
+          ],
+          "value": 487
+         },
+         {
+          "dimension_values": [
+           "Urgench, Xorazm Region"
+          ],
+          "value": 913
+         },
+         {
+          "dimension_values": [
+           "Jalal-Abad, Osh Region"
+          ],
+          "value": 267
+         },
+         {
+          "dimension_values": [
+           "Tashkent, Tashkent Region"
+          ],
+          "value": 319
+         },
+         {
+          "dimension_values": [
+           "Jizzakh, Jizzakh Region"
+          ],
+          "value": 340
+         },
+         {
+          "dimension_values": [
+           "Kyzyl-Kiya, Osh Region"
+          ],
+          "value": 395
+         }
+        ]
+       }
+      ]
+     },
+     "country": {
+      "timeframe": "this_month",
+      "breakdowns": [
+       {
+        "dimension_keys": [
+         "country"
+        ],
+        "results": [
+         {
+          "dimension_values": [
+           "RS"
+          ],
+          "value": 2
+         },
+         {
+          "dimension_values": [
+           "DE"
+          ],
+          "value": 6
+         },
+         {
+          "dimension_values": [
+           "NP"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "BE"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "FI"
+          ],
+          "value": 3
+         },
+         {
+          "dimension_values": [
+           "RU"
+          ],
+          "value": 1431
+         },
+         {
+          "dimension_values": [
+           "BG"
+          ],
+          "value": 2
+         },
+         {
+          "dimension_values": [
+           "JP"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "LT"
+          ],
+          "value": 4
+         },
+         {
+          "dimension_values": [
+           "LV"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "HR"
+          ],
+          "value": 4
+         },
+         {
+          "dimension_values": [
+           "FR"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "UA"
+          ],
+          "value": 2
+         },
+         {
+          "dimension_values": [
+           "LY"
+          ],
+          "value": 2
+         },
+         {
+          "dimension_values": [
+           "SA"
+          ],
+          "value": 4
+         },
+         {
+          "dimension_values": [
+           "BR"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "SE"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "BY"
+          ],
+          "value": 3
+         },
+         {
+          "dimension_values": [
+           "GB"
+          ],
+          "value": 9
+         },
+         {
+          "dimension_values": [
+           "KG"
+          ],
+          "value": 1463
+         },
+         {
+          "dimension_values": [
+           "CA"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "GE"
+          ],
+          "value": 9
+         },
+         {
+          "dimension_values": [
+           "US"
+          ],
+          "value": 17
+         },
+         {
+          "dimension_values": [
+           "EG"
+          ],
+          "value": 10
+         },
+         {
+          "dimension_values": [
+           "IL"
+          ],
+          "value": 10
+         },
+         {
+          "dimension_values": [
+           "AE"
+          ],
+          "value": 5
+         },
+         {
+          "dimension_values": [
+           "AF"
+          ],
+          "value": 2
+         },
+         {
+          "dimension_values": [
+           "IN"
+          ],
+          "value": 2
+         },
+         {
+          "dimension_values": [
+           "UZ"
+          ],
+          "value": 19271
+         },
+         {
+          "dimension_values": [
+           "SY"
+          ],
+          "value": 6
+         },
+         {
+          "dimension_values": [
+           "KR"
+          ],
+          "value": 18
+         },
+         {
+          "dimension_values": [
+           "CN"
+          ],
+          "value": 2
+         },
+         {
+          "dimension_values": [
+           "AM"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "KZ"
+          ],
+          "value": 358
+         },
+         {
+          "dimension_values": [
+           "TH"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "TJ"
+          ],
+          "value": 911
+         },
+         {
+          "dimension_values": [
+           "CZ"
+          ],
+          "value": 2
+         },
+         {
+          "dimension_values": [
+           "TM"
+          ],
+          "value": 92
+         },
+         {
+          "dimension_values": [
+           "PL"
+          ],
+          "value": 8
+         },
+         {
+          "dimension_values": [
+           "NL"
+          ],
+          "value": 3
+         },
+         {
+          "dimension_values": [
+           "TR"
+          ],
+          "value": 110
+         }
+        ]
+       }
+      ]
+     }
+    },
     "engaged_audience_demographics": {
      "age": {
       "timeframe": "this_month",
@@ -842,21 +1468,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DexAVhLFHj6/",
      "posted_at": "2026-10-21T18:03:24+0000",
-     "age_h": 1.2,
+     "age_h": 7.2,
      "caption": "Sizniki qaysi: chapmi yoki o'ngmi?",
-     "like_count": 88,
-     "comments_count": 16,
+     "like_count": 247,
+     "comments_count": 28,
      "insights": {
-      "views": 5524,
-      "reach": 2239,
-      "likes": 88,
-      "comments": 16,
-      "shares": 0,
-      "saved": 16,
-      "total_interactions": 129,
-      "ig_reels_avg_watch_time": 20326,
-      "ig_reels_video_view_total_time": 44475298,
-      "reels_skip_rate": 19
+      "views": 16328,
+      "reach": 12597,
+      "likes": 247,
+      "comments": 28,
+      "shares": 101,
+      "saved": 43,
+      "total_interactions": 438,
+      "ig_reels_avg_watch_time": 27573,
+      "ig_reels_video_view_total_time": 353817859,
+      "reels_skip_rate": 27.2
      }
     },
     {
@@ -865,21 +1491,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Dew81gLFbSq/",
      "posted_at": "2026-10-21T17:32:29+0000",
-     "age_h": 1.7,
+     "age_h": 7.7,
      "caption": "Nechtasida tuzoqqa tushdingiz?",
-     "like_count": 611,
-     "comments_count": 116,
+     "like_count": 1235,
+     "comments_count": 217,
      "insights": {
-      "views": 28557,
-      "reach": 20336,
-      "likes": 613,
-      "comments": 116,
-      "shares": 0,
-      "saved": 39,
-      "total_interactions": 798,
-      "ig_reels_avg_watch_time": 35181,
-      "ig_reels_video_view_total_time": 727900968,
-      "reels_skip_rate": 27
+      "views": 58475,
+      "reach": 48556,
+      "likes": 1235,
+      "comments": 217,
+      "shares": 316,
+      "saved": 75,
+      "total_interactions": 1901,
+      "ig_reels_avg_watch_time": 35688,
+      "ig_reels_video_view_total_time": 1743187556,
+      "reels_skip_rate": 31.6
      }
     },
     {
@@ -888,21 +1514,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DewcTkpjOo7/",
      "posted_at": "2026-10-21T12:48:11+0000",
-     "age_h": 6.4,
+     "age_h": 12.4,
      "caption": "Siz qaysi biriga ishongandingiz?",
-     "like_count": 680,
-     "comments_count": 23,
+     "like_count": 801,
+     "comments_count": 24,
      "insights": {
-      "views": 33647,
-      "reach": 26373,
-      "likes": 680,
-      "comments": 23,
-      "shares": 601,
-      "saved": 93,
-      "total_interactions": 1461,
-      "ig_reels_avg_watch_time": 22555,
-      "ig_reels_video_view_total_time": 617264047,
-      "reels_skip_rate": 29.3
+      "views": 37147,
+      "reach": 29776,
+      "likes": 801,
+      "comments": 24,
+      "shares": 713,
+      "saved": 101,
+      "total_interactions": 1708,
+      "ig_reels_avg_watch_time": 23220,
+      "ig_reels_video_view_total_time": 706854124,
+      "reels_skip_rate": 29.4
      }
     },
     {
@@ -911,20 +1537,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeuG2Mtly4u/",
      "posted_at": "2026-10-20T15:02:15+0000",
-     "age_h": 28.2,
+     "age_h": 34.2,
      "caption": "Qaysi tovushgacha eshitdingiz?",
-     "like_count": 382,
+     "like_count": 387,
      "comments_count": 74,
      "insights": {
-      "views": 32521,
-      "reach": 25178,
-      "likes": 382,
+      "views": 32969,
+      "reach": 25559,
+      "likes": 387,
       "comments": 74,
-      "shares": 93,
-      "saved": 75,
-      "total_interactions": 673,
-      "ig_reels_avg_watch_time": 28438,
-      "ig_reels_video_view_total_time": 762687890,
+      "shares": 101,
+      "saved": 76,
+      "total_interactions": 687,
+      "ig_reels_avg_watch_time": 28449,
+      "ig_reels_video_view_total_time": 775734015,
       "reels_skip_rate": 23.2
      }
     },
@@ -934,21 +1560,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeuAB9fCc3W/",
      "posted_at": "2026-10-20T14:02:46+0000",
-     "age_h": 29.2,
+     "age_h": 35.2,
      "caption": "Pulsingiz nechchi chiqdi?",
-     "like_count": 2066,
-     "comments_count": 771,
+     "like_count": 2090,
+     "comments_count": 781,
      "insights": {
-      "views": 175237,
-      "reach": 135145,
-      "likes": 2066,
-      "comments": 771,
-      "shares": 521,
-      "saved": 357,
-      "total_interactions": 3879,
-      "ig_reels_avg_watch_time": 30409,
-      "ig_reels_video_view_total_time": 4145004153,
-      "reels_skip_rate": 24.2
+      "views": 176757,
+      "reach": 136493,
+      "likes": 2090,
+      "comments": 781,
+      "shares": 528,
+      "saved": 360,
+      "total_interactions": 3924,
+      "ig_reels_avg_watch_time": 30406,
+      "ig_reels_video_view_total_time": 4185359138,
+      "reels_skip_rate": 24.3
      }
     },
     {
@@ -957,20 +1583,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Det5GaIkZzO/",
      "posted_at": "2026-10-20T13:02:28+0000",
-     "age_h": 30.2,
+     "age_h": 36.2,
      "caption": "5 tadan nechtasini topdingiz?",
-     "like_count": 5399,
-     "comments_count": 1217,
+     "like_count": 5420,
+     "comments_count": 1223,
      "insights": {
-      "views": 316886,
-      "reach": 261297,
-      "likes": 5400,
-      "comments": 1217,
-      "shares": 1054,
-      "saved": 245,
-      "total_interactions": 8192,
-      "ig_reels_avg_watch_time": 36996,
-      "ig_reels_video_view_total_time": 9827660804,
+      "views": 318537,
+      "reach": 262824,
+      "likes": 5420,
+      "comments": 1223,
+      "shares": 1069,
+      "saved": 247,
+      "total_interactions": 8236,
+      "ig_reels_avg_watch_time": 37024,
+      "ig_reels_video_view_total_time": 9892966683,
       "reels_skip_rate": 26.9
      }
     },
@@ -980,20 +1606,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DetyQYaE2-3/",
      "posted_at": "2026-10-20T12:02:22+0000",
-     "age_h": 31.2,
+     "age_h": 37.2,
      "caption": "Nechta qand deb o'yladingiz?",
-     "like_count": 229,
+     "like_count": 233,
      "comments_count": 48,
      "insights": {
-      "views": 23786,
-      "reach": 19027,
-      "likes": 229,
+      "views": 24049,
+      "reach": 19341,
+      "likes": 233,
       "comments": 48,
       "shares": 51,
       "saved": 19,
-      "total_interactions": 361,
-      "ig_reels_avg_watch_time": 19688,
-      "ig_reels_video_view_total_time": 390507526,
+      "total_interactions": 365,
+      "ig_reels_avg_watch_time": 20399,
+      "ig_reels_video_view_total_time": 409730546,
       "reels_skip_rate": 26.7
      }
     },
@@ -1003,20 +1629,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DetrVBllGLW/",
      "posted_at": "2026-10-20T11:02:48+0000",
-     "age_h": 32.2,
+     "age_h": 38.2,
      "caption": "Sizningcha, qalinroq o'sadimi?",
      "like_count": 2610,
      "comments_count": 49,
      "insights": {
-      "views": 171353,
-      "reach": 148549,
+      "views": 171676,
+      "reach": 148878,
       "likes": 2610,
       "comments": 49,
-      "shares": 1304,
+      "shares": 1320,
       "saved": 213,
-      "total_interactions": 4349,
-      "ig_reels_avg_watch_time": 23502,
-      "ig_reels_video_view_total_time": 3487086610,
+      "total_interactions": 4365,
+      "ig_reels_avg_watch_time": 23501,
+      "ig_reels_video_view_total_time": 3494555417,
       "reels_skip_rate": 24.4
      }
     },
@@ -1026,20 +1652,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeriOHrgtgu/",
      "posted_at": "2026-10-19T15:04:29+0000",
-     "age_h": 52.2,
+     "age_h": 58.2,
      "caption": "Siz qaysi hujayra bo'lardingiz?",
-     "like_count": 592,
+     "like_count": 596,
      "comments_count": 11,
      "insights": {
-      "views": 31040,
-      "reach": 22960,
-      "likes": 592,
+      "views": 31239,
+      "reach": 23206,
+      "likes": 596,
       "comments": 11,
       "shares": 25,
-      "saved": 26,
-      "total_interactions": 684,
-      "ig_reels_avg_watch_time": 23826,
-      "ig_reels_video_view_total_time": 601895763,
+      "saved": 27,
+      "total_interactions": 689,
+      "ig_reels_avg_watch_time": 23804,
+      "ig_reels_video_view_total_time": 606251185,
       "reels_skip_rate": 22.3
      }
     },
@@ -1049,20 +1675,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DerUekdiJNQ/",
      "posted_at": "2026-10-19T13:03:43+0000",
-     "age_h": 54.2,
+     "age_h": 60.2,
      "caption": "Aybdormi yoki aybsiz?",
-     "like_count": 1771,
+     "like_count": 1775,
      "comments_count": 115,
      "insights": {
-      "views": 91493,
-      "reach": 75877,
-      "likes": 1771,
+      "views": 91735,
+      "reach": 75998,
+      "likes": 1775,
       "comments": 115,
-      "shares": 555,
+      "shares": 562,
       "saved": 94,
-      "total_interactions": 2630,
-      "ig_reels_avg_watch_time": 21641,
-      "ig_reels_video_view_total_time": 1686741301,
+      "total_interactions": 2642,
+      "ig_reels_avg_watch_time": 21677,
+      "ig_reels_video_view_total_time": 1694725925,
       "reels_skip_rate": 22.7
      }
     },
@@ -1072,21 +1698,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DerGkxzCEXJ/",
      "posted_at": "2026-10-19T11:03:40+0000",
-     "age_h": 56.2,
+     "age_h": 62.2,
      "caption": "Siz qaysi organni ko'proq qiynayapsiz?",
-     "like_count": 2763,
-     "comments_count": 99,
+     "like_count": 2765,
+     "comments_count": 100,
      "insights": {
-      "views": 103422,
-      "reach": 84152,
-      "likes": 2763,
-      "comments": 99,
-      "shares": 1875,
+      "views": 103605,
+      "reach": 84464,
+      "likes": 2765,
+      "comments": 100,
+      "shares": 1876,
       "saved": 119,
-      "total_interactions": 5004,
-      "ig_reels_avg_watch_time": 21607,
-      "ig_reels_video_view_total_time": 1893098043,
-      "reels_skip_rate": 26.3
+      "total_interactions": 5008,
+      "ig_reels_avg_watch_time": 21602,
+      "ig_reels_video_view_total_time": 1896644109,
+      "reels_skip_rate": 26.4
      }
     },
     {
@@ -1095,20 +1721,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Deq4wYIlb2a/",
      "posted_at": "2026-10-19T09:01:43+0000",
-     "age_h": 58.2,
+     "age_h": 64.2,
      "caption": "Baliq yog'ingiz hid beryaptimi?",
-     "like_count": 432,
+     "like_count": 434,
      "comments_count": 8,
      "insights": {
-      "views": 29562,
-      "reach": 25594,
-      "likes": 432,
+      "views": 29712,
+      "reach": 25734,
+      "likes": 434,
       "comments": 8,
-      "shares": 107,
+      "shares": 111,
       "saved": 75,
-      "total_interactions": 644,
-      "ig_reels_avg_watch_time": 16240,
-      "ig_reels_video_view_total_time": 418997223,
+      "total_interactions": 651,
+      "ig_reels_avg_watch_time": 16317,
+      "ig_reels_video_view_total_time": 423480311,
       "reels_skip_rate": 33
      }
     },
@@ -1118,21 +1744,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeqkH1flIGi/",
      "posted_at": "2026-10-19T06:00:52+0000",
-     "age_h": 61.2,
+     "age_h": 67.2,
      "caption": "Siz qaysi magniyni ichasiz?",
-     "like_count": 568,
+     "like_count": 570,
      "comments_count": 4,
      "insights": {
-      "views": 31867,
-      "reach": 27172,
-      "likes": 568,
+      "views": 31989,
+      "reach": 27222,
+      "likes": 570,
       "comments": 4,
-      "shares": 156,
+      "shares": 157,
       "saved": 223,
-      "total_interactions": 1015,
-      "ig_reels_avg_watch_time": 15600,
-      "ig_reels_video_view_total_time": 432737876,
-      "reels_skip_rate": 36
+      "total_interactions": 1018,
+      "ig_reels_avg_watch_time": 15606,
+      "ig_reels_video_view_total_time": 434695641,
+      "reels_skip_rate": 36.1
      }
     },
     {
@@ -1141,20 +1767,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DepD_AvlNH_/",
      "posted_at": "2026-10-18T16:00:55+0000",
-     "age_h": 75.2,
+     "age_h": 81.2,
      "caption": "Siz necha kun dedingiz?",
-     "like_count": 8010,
-     "comments_count": 708,
+     "like_count": 8016,
+     "comments_count": 713,
      "insights": {
-      "views": 312633,
-      "reach": 247231,
-      "likes": 8010,
-      "comments": 708,
-      "shares": 5836,
+      "views": 313142,
+      "reach": 247251,
+      "likes": 8016,
+      "comments": 713,
+      "shares": 5843,
       "saved": 593,
-      "total_interactions": 15753,
-      "ig_reels_avg_watch_time": 26240,
-      "ig_reels_video_view_total_time": 6685448426,
+      "total_interactions": 15772,
+      "ig_reels_avg_watch_time": 26281,
+      "ig_reels_video_view_total_time": 6707574201,
       "reels_skip_rate": 26.6
      }
     },
@@ -1164,20 +1790,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Deo9K19DE8e/",
      "posted_at": "2026-10-18T15:01:39+0000",
-     "age_h": 76.2,
+     "age_h": 82.2,
      "caption": "Uchtadan nechtasini topdingiz?",
-     "like_count": 19877,
-     "comments_count": 4620,
+     "like_count": 19909,
+     "comments_count": 4629,
      "insights": {
-      "views": 925224,
-      "reach": 726077,
-      "likes": 19878,
-      "comments": 4620,
-      "shares": 24749,
+      "views": 926861,
+      "reach": 728812,
+      "likes": 19909,
+      "comments": 4630,
+      "shares": 24864,
       "saved": 1834,
-      "total_interactions": 53168,
-      "ig_reels_avg_watch_time": 28408,
-      "ig_reels_video_view_total_time": 21047320128,
+      "total_interactions": 53327,
+      "ig_reels_avg_watch_time": 28412,
+      "ig_reels_video_view_total_time": 21094237139,
       "reels_skip_rate": 34.2
      }
     },
@@ -1187,20 +1813,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Deo2TjfjsHy/",
      "posted_at": "2026-10-18T14:03:53+0000",
-     "age_h": 77.2,
+     "age_h": 83.2,
      "caption": "Ikkalasi ham chiqdimi?",
-     "like_count": 5501,
-     "comments_count": 535,
+     "like_count": 5511,
+     "comments_count": 539,
      "insights": {
-      "views": 394675,
-      "reach": 310005,
-      "likes": 5501,
-      "comments": 535,
-      "shares": 1776,
+      "views": 395608,
+      "reach": 310839,
+      "likes": 5511,
+      "comments": 539,
+      "shares": 1783,
       "saved": 471,
-      "total_interactions": 8615,
-      "ig_reels_avg_watch_time": 28349,
-      "ig_reels_video_view_total_time": 8820592767,
+      "total_interactions": 8638,
+      "ig_reels_avg_watch_time": 28353,
+      "ig_reels_video_view_total_time": 8845634691,
       "reels_skip_rate": 25.2
      }
     },
@@ -1210,20 +1836,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Deo0xIdAgyR/",
      "posted_at": "2026-10-18T13:47:59+0000",
-     "age_h": 77.4,
+     "age_h": 83.4,
      "caption": "Necha marta qashindingiz?",
-     "like_count": 2904,
-     "comments_count": 2640,
+     "like_count": 2912,
+     "comments_count": 2650,
      "insights": {
-      "views": 173507,
-      "reach": 127562,
-      "likes": 2904,
-      "comments": 2640,
-      "shares": 811,
+      "views": 173972,
+      "reach": 127846,
+      "likes": 2912,
+      "comments": 2650,
+      "shares": 814,
       "saved": 159,
-      "total_interactions": 6705,
-      "ig_reels_avg_watch_time": 26616,
-      "ig_reels_video_view_total_time": 3605173359,
+      "total_interactions": 6726,
+      "ig_reels_avg_watch_time": 26619,
+      "ig_reels_video_view_total_time": 3616194952,
       "reels_skip_rate": 23.6
      }
     },
@@ -1233,20 +1859,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Dembw48COE1/",
      "posted_at": "2026-10-17T15:31:09+0000",
-     "age_h": 99.7,
+     "age_h": 105.7,
      "caption": "Siz uddaladingizmi?",
-     "like_count": 620,
-     "comments_count": 275,
+     "like_count": 621,
+     "comments_count": 276,
      "insights": {
-      "views": 76644,
-      "reach": 59896,
-      "likes": 620,
-      "comments": 275,
+      "views": 76813,
+      "reach": 60063,
+      "likes": 621,
+      "comments": 276,
       "shares": 193,
       "saved": 45,
-      "total_interactions": 1179,
-      "ig_reels_avg_watch_time": 25149,
-      "ig_reels_video_view_total_time": 1564142632,
+      "total_interactions": 1181,
+      "ig_reels_avg_watch_time": 25150,
+      "ig_reels_video_view_total_time": 1568220874,
       "reels_skip_rate": 21.5
      }
     },
@@ -1256,20 +1882,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DemU4zwkWc_/",
      "posted_at": "2026-10-17T14:30:36+0000",
-     "age_h": 100.7,
+     "age_h": 106.7,
      "caption": "Ruchka necha pul?",
-     "like_count": 1260,
+     "like_count": 1264,
      "comments_count": 151,
      "insights": {
-      "views": 77756,
-      "reach": 55417,
-      "likes": 1260,
+      "views": 78018,
+      "reach": 55630,
+      "likes": 1264,
       "comments": 151,
-      "shares": 788,
-      "saved": 99,
-      "total_interactions": 2379,
-      "ig_reels_avg_watch_time": 32798,
-      "ig_reels_video_view_total_time": 1883860236,
+      "shares": 793,
+      "saved": 100,
+      "total_interactions": 2390,
+      "ig_reels_avg_watch_time": 32809,
+      "ig_reels_video_view_total_time": 1891886792,
       "reels_skip_rate": 27.9
      }
     },
@@ -1279,20 +1905,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DemOBdtkgIV/",
      "posted_at": "2026-10-17T13:30:43+0000",
-     "age_h": 101.7,
+     "age_h": 107.7,
      "caption": "Og'zingizga suv keldimi?",
      "like_count": 1795,
      "comments_count": 621,
      "insights": {
-      "views": 156143,
+      "views": 156281,
       "reach": 122018,
       "likes": 1795,
       "comments": 621,
       "shares": 331,
       "saved": 102,
       "total_interactions": 2969,
-      "ig_reels_avg_watch_time": 21664,
-      "ig_reels_video_view_total_time": 2766573412,
+      "ig_reels_avg_watch_time": 21665,
+      "ig_reels_video_view_total_time": 2769182658,
       "reels_skip_rate": 31.1
      }
     },
@@ -1302,20 +1928,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DemIT-IFHmZ/",
      "posted_at": "2026-10-17T12:41:06+0000",
-     "age_h": 102.6,
+     "age_h": 108.6,
      "caption": "Qaysi tomoni ochiqroq?",
-     "like_count": 2095,
-     "comments_count": 574,
+     "like_count": 2096,
+     "comments_count": 575,
      "insights": {
-      "views": 170740,
-      "reach": 131744,
-      "likes": 2095,
-      "comments": 574,
-      "shares": 718,
-      "saved": 140,
-      "total_interactions": 3641,
+      "views": 170900,
+      "reach": 131828,
+      "likes": 2096,
+      "comments": 575,
+      "shares": 719,
+      "saved": 141,
+      "total_interactions": 3645,
       "ig_reels_avg_watch_time": 20964,
-      "ig_reels_video_view_total_time": 2947863646,
+      "ig_reels_video_view_total_time": 2951108390,
       "reels_skip_rate": 25.9
      }
     },
@@ -1325,20 +1951,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Dejs058F_8-/",
      "posted_at": "2026-10-16T14:02:41+0000",
-     "age_h": 125.2,
+     "age_h": 131.2,
      "caption": "Topdingizmi?",
      "like_count": 389,
      "comments_count": 26,
      "insights": {
-      "views": 29788,
-      "reach": 23687,
+      "views": 29861,
+      "reach": 23804,
       "likes": 389,
       "comments": 26,
       "shares": 70,
       "saved": 42,
       "total_interactions": 548,
-      "ig_reels_avg_watch_time": 21926,
-      "ig_reels_video_view_total_time": 539631338,
+      "ig_reels_avg_watch_time": 21921,
+      "ig_reels_video_view_total_time": 541150334,
       "reels_skip_rate": 22.4
      }
     },
@@ -1348,20 +1974,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Deje_KjjgHz/",
      "posted_at": "2026-10-16T12:01:21+0000",
-     "age_h": 127.2,
+     "age_h": 133.2,
      "caption": "Hali ham ko'ryapsizmi?",
-     "like_count": 2039,
+     "like_count": 2040,
      "comments_count": 71,
      "insights": {
-      "views": 160883,
-      "reach": 125323,
-      "likes": 2039,
+      "views": 161039,
+      "reach": 125353,
+      "likes": 2040,
       "comments": 71,
-      "shares": 7358,
-      "saved": 120,
-      "total_interactions": 9671,
-      "ig_reels_avg_watch_time": 21314,
-      "ig_reels_video_view_total_time": 2745258830,
+      "shares": 7359,
+      "saved": 121,
+      "total_interactions": 9674,
+      "ig_reels_avg_watch_time": 21313,
+      "ig_reels_video_view_total_time": 2748362172,
       "reels_skip_rate": 29.8
      }
     },
@@ -1371,20 +1997,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DejSvDljTG-/",
      "posted_at": "2026-10-16T10:14:26+0000",
-     "age_h": 129.0,
+     "age_h": 135.0,
      "caption": "Ko'tara oldingizmi?",
-     "like_count": 5060,
-     "comments_count": 905,
+     "like_count": 5069,
+     "comments_count": 906,
      "insights": {
-      "views": 671986,
-      "reach": 487491,
-      "likes": 5060,
-      "comments": 905,
-      "shares": 10326,
-      "saved": 793,
-      "total_interactions": 17916,
-      "ig_reels_avg_watch_time": 24753,
-      "ig_reels_video_view_total_time": 12547296169,
+      "views": 672790,
+      "reach": 487635,
+      "likes": 5069,
+      "comments": 906,
+      "shares": 10352,
+      "saved": 794,
+      "total_interactions": 17954,
+      "ig_reels_avg_watch_time": 24751,
+      "ig_reels_video_view_total_time": 12563775400,
       "reels_skip_rate": 26.3
      }
     },
@@ -1394,20 +2020,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DehK3_4FS_Y/",
      "posted_at": "2026-10-15T14:27:16+0000",
-     "age_h": 148.8,
+     "age_h": 154.8,
      "caption": "Siz qancha chiqardingiz?",
-     "like_count": 14946,
-     "comments_count": 4576,
+     "like_count": 14983,
+     "comments_count": 4580,
      "insights": {
-      "views": 759321,
-      "reach": 573705,
-      "likes": 14947,
-      "comments": 4576,
-      "shares": 12281,
-      "saved": 1175,
-      "total_interactions": 33896,
-      "ig_reels_avg_watch_time": 26070,
-      "ig_reels_video_view_total_time": 15114989006,
+      "views": 760808,
+      "reach": 574915,
+      "likes": 14983,
+      "comments": 4580,
+      "shares": 12324,
+      "saved": 1177,
+      "total_interactions": 33984,
+      "ig_reels_avg_watch_time": 26083,
+      "ig_reels_video_view_total_time": 15154517905,
       "reels_skip_rate": 32.4
      }
     },
@@ -1417,20 +2043,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Deg9MP9jKLC/",
      "posted_at": "2026-10-15T12:27:42+0000",
-     "age_h": 150.8,
+     "age_h": 156.8,
      "caption": "Eng qiziq tushingiz qanday edi?",
-     "like_count": 5032,
-     "comments_count": 1065,
+     "like_count": 5040,
+     "comments_count": 1067,
      "insights": {
-      "views": 165067,
-      "reach": 133055,
-      "likes": 5032,
-      "comments": 1065,
-      "shares": 1117,
-      "saved": 329,
-      "total_interactions": 7767,
-      "ig_reels_avg_watch_time": 30961,
-      "ig_reels_video_view_total_time": 4173253146,
+      "views": 165229,
+      "reach": 133135,
+      "likes": 5040,
+      "comments": 1067,
+      "shares": 1119,
+      "saved": 332,
+      "total_interactions": 7782,
+      "ig_reels_avg_watch_time": 31060,
+      "ig_reels_video_view_total_time": 4191171628,
       "reels_skip_rate": 31.1
      }
     },
@@ -1440,20 +2066,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeeLJ2JgKZa/",
      "posted_at": "2026-10-14T10:32:21+0000",
-     "age_h": 176.7,
+     "age_h": 182.7,
      "caption": "Oyog'ingiz sizga bo'ysundimi?",
      "like_count": 3045,
-     "comments_count": 338,
+     "comments_count": 336,
      "insights": {
-      "views": 265372,
+      "views": 265550,
       "reach": 198485,
       "likes": 3045,
-      "comments": 338,
+      "comments": 336,
       "shares": 3399,
       "saved": 702,
-      "total_interactions": 7948,
-      "ig_reels_avg_watch_time": 28081,
-      "ig_reels_video_view_total_time": 5876925936,
+      "total_interactions": 7946,
+      "ig_reels_avg_watch_time": 28082,
+      "ig_reels_video_view_total_time": 5881527755,
       "reels_skip_rate": 28.8
      }
     },
@@ -1463,20 +2089,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DedyR3EN3-0/",
      "posted_at": "2026-10-14T06:55:05+0000",
-     "age_h": 180.3,
+     "age_h": 186.3,
      "caption": "Nechta topdingiz?",
-     "like_count": 1041,
+     "like_count": 1042,
      "comments_count": 91,
      "insights": {
-      "views": 79956,
+      "views": 80027,
       "reach": 57236,
-      "likes": 1041,
+      "likes": 1042,
       "comments": 91,
-      "shares": 674,
+      "shares": 675,
       "saved": 106,
-      "total_interactions": 1989,
-      "ig_reels_avg_watch_time": 33972,
-      "ig_reels_video_view_total_time": 1973890288,
+      "total_interactions": 1991,
+      "ig_reels_avg_watch_time": 33966,
+      "ig_reels_video_view_total_time": 1975978264,
       "reels_skip_rate": 30.3
      }
     },
@@ -1486,21 +2112,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DecSho6NSl6/",
      "posted_at": "2026-10-13T16:59:29+0000",
-     "age_h": 194.2,
+     "age_h": 200.2,
      "caption": "Necha soniya chiday oldingiz?",
-     "like_count": 940,
-     "comments_count": 678,
+     "like_count": 942,
+     "comments_count": 679,
      "insights": {
-      "views": 94973,
-      "reach": 68421,
-      "likes": 940,
-      "comments": 678,
+      "views": 95041,
+      "reach": 68493,
+      "likes": 942,
+      "comments": 679,
       "shares": 294,
       "saved": 109,
-      "total_interactions": 2100,
-      "ig_reels_avg_watch_time": 39975,
-      "ig_reels_video_view_total_time": 2871554070,
-      "reels_skip_rate": 28.4
+      "total_interactions": 2103,
+      "ig_reels_avg_watch_time": 39976,
+      "ig_reels_video_view_total_time": 2874085232,
+      "reels_skip_rate": 28.5
      }
     },
     {
@@ -1509,20 +2135,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DecEV5rtM5M/",
      "posted_at": "2026-10-13T14:54:51+0000",
-     "age_h": 196.3,
+     "age_h": 202.3,
      "caption": "Necha soniya ushlab turdingiz?",
-     "like_count": 6835,
-     "comments_count": 6776,
+     "like_count": 6841,
+     "comments_count": 6786,
      "insights": {
-      "views": 474002,
-      "reach": 351051,
-      "likes": 6835,
-      "comments": 6776,
-      "shares": 3469,
-      "saved": 581,
-      "total_interactions": 18187,
-      "ig_reels_avg_watch_time": 38444,
-      "ig_reels_video_view_total_time": 14153555605,
+      "views": 474518,
+      "reach": 351450,
+      "likes": 6841,
+      "comments": 6786,
+      "shares": 3474,
+      "saved": 582,
+      "total_interactions": 18210,
+      "ig_reels_avg_watch_time": 38443,
+      "ig_reels_video_view_total_time": 14172311894,
       "reels_skip_rate": 28.8
      }
     },
@@ -1532,20 +2158,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DebkJFUtjEV/",
      "posted_at": "2026-10-13T10:15:06+0000",
-     "age_h": 201.0,
+     "age_h": 207.0,
      "caption": "Nechta yuz sanadingiz?",
-     "like_count": 3778,
+     "like_count": 3780,
      "comments_count": 247,
      "insights": {
-      "views": 202458,
+      "views": 202545,
       "reach": 144713,
-      "likes": 3778,
+      "likes": 3780,
       "comments": 247,
       "shares": 2333,
       "saved": 314,
-      "total_interactions": 6952,
-      "ig_reels_avg_watch_time": 38740,
-      "ig_reels_video_view_total_time": 5878343475,
+      "total_interactions": 6954,
+      "ig_reels_avg_watch_time": 38739,
+      "ig_reels_video_view_total_time": 5881708462,
       "reels_skip_rate": 26.9
      }
     },
@@ -1555,20 +2181,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DebNAAONtEX/",
      "posted_at": "2026-10-13T06:51:31+0000",
-     "age_h": 204.4,
+     "age_h": 210.4,
      "caption": "Nechta xato qildingiz?",
-     "like_count": 2157,
+     "like_count": 2158,
      "comments_count": 299,
      "insights": {
-      "views": 91058,
+      "views": 91116,
       "reach": 59700,
-      "likes": 2157,
+      "likes": 2158,
       "comments": 299,
       "shares": 1438,
       "saved": 184,
-      "total_interactions": 4226,
-      "ig_reels_avg_watch_time": 36837,
-      "ig_reels_video_view_total_time": 2133830348,
+      "total_interactions": 4227,
+      "ig_reels_avg_watch_time": 36830,
+      "ig_reels_video_view_total_time": 2135605733,
       "reels_skip_rate": 24.8
      }
     },
@@ -1578,20 +2204,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeZopCtNNaU/",
      "posted_at": "2026-10-12T16:17:12+0000",
-     "age_h": 219.0,
+     "age_h": 225.0,
      "caption": "Sutmi yoki Suv?",
-     "like_count": 44236,
-     "comments_count": 8786,
+     "like_count": 44311,
+     "comments_count": 8801,
      "insights": {
-      "views": 2592308,
-      "reach": 2030977,
-      "likes": 44236,
-      "comments": 8786,
-      "shares": 114662,
-      "saved": 5282,
-      "total_interactions": 177917,
-      "ig_reels_avg_watch_time": 23885,
-      "ig_reels_video_view_total_time": 49198388914,
+      "views": 2595532,
+      "reach": 2034647,
+      "likes": 44311,
+      "comments": 8801,
+      "shares": 114871,
+      "saved": 5291,
+      "total_interactions": 178228,
+      "ig_reels_avg_watch_time": 23891,
+      "ig_reels_video_view_total_time": 49283229654,
       "reels_skip_rate": 38.9
      }
     },
@@ -1601,20 +2227,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeY9qrAhcUJ/",
      "posted_at": "2026-10-12T10:01:54+0000",
-     "age_h": 225.2,
+     "age_h": 231.2,
      "caption": "Siz ham eshitganmisiz?",
      "like_count": 705,
      "comments_count": 44,
      "insights": {
-      "views": 48540,
+      "views": 48579,
       "reach": 35509,
       "likes": 705,
       "comments": 44,
       "shares": 537,
       "saved": 46,
       "total_interactions": 1362,
-      "ig_reels_avg_watch_time": 32463,
-      "ig_reels_video_view_total_time": 1210217701,
+      "ig_reels_avg_watch_time": 32456,
+      "ig_reels_video_view_total_time": 1211291384,
       "reels_skip_rate": 24.1
      }
     },
@@ -1624,20 +2250,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeYeCxgtZvD/",
      "posted_at": "2026-10-12T05:22:07+0000",
-     "age_h": 229.9,
+     "age_h": 235.9,
      "caption": "Necha soniya chidadingiz?",
-     "like_count": 805,
-     "comments_count": 467,
+     "like_count": 806,
+     "comments_count": 471,
      "insights": {
-      "views": 108916,
-      "reach": 77982,
-      "likes": 805,
-      "comments": 467,
+      "views": 109054,
+      "reach": 77990,
+      "likes": 806,
+      "comments": 471,
       "shares": 316,
       "saved": 77,
-      "total_interactions": 1729,
-      "ig_reels_avg_watch_time": 31023,
-      "ig_reels_video_view_total_time": 2547365973,
+      "total_interactions": 1734,
+      "ig_reels_avg_watch_time": 31037,
+      "ig_reels_video_view_total_time": 2552732717,
       "reels_skip_rate": 23.5
      }
     },
@@ -1647,20 +2273,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeXIFtgNhjh/",
      "posted_at": "2026-10-11T16:50:55+0000",
-     "age_h": 242.4,
+     "age_h": 248.4,
      "caption": "Doira gʻoyib boʻldimi?",
      "like_count": 1178,
      "comments_count": 141,
      "insights": {
-      "views": 87946,
+      "views": 88064,
       "reach": 67612,
       "likes": 1178,
       "comments": 141,
-      "shares": 692,
+      "shares": 696,
       "saved": 114,
-      "total_interactions": 2236,
-      "ig_reels_avg_watch_time": 30866,
-      "ig_reels_video_view_total_time": 2120990799,
+      "total_interactions": 2240,
+      "ig_reels_avg_watch_time": 30863,
+      "ig_reels_video_view_total_time": 2124159091,
       "reels_skip_rate": 30.7
      }
     },
@@ -1670,20 +2296,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeW5FAqtHKK/",
      "posted_at": "2026-10-11T14:39:52+0000",
-     "age_h": 244.6,
+     "age_h": 250.6,
      "caption": "Kuniga necha marta qisirlatasiz?",
-     "like_count": 2112,
+     "like_count": 2114,
      "comments_count": 190,
      "insights": {
-      "views": 132991,
-      "reach": 107881,
-      "likes": 2112,
+      "views": 133135,
+      "reach": 107911,
+      "likes": 2114,
       "comments": 190,
-      "shares": 1697,
+      "shares": 1701,
       "saved": 273,
-      "total_interactions": 4411,
-      "ig_reels_avg_watch_time": 35582,
-      "ig_reels_video_view_total_time": 3892662973,
+      "total_interactions": 4417,
+      "ig_reels_avg_watch_time": 35585,
+      "ig_reels_video_view_total_time": 3897510818,
       "reels_skip_rate": 22.6
      }
     },
@@ -1693,20 +2319,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeWcNELtWLB/",
      "posted_at": "2026-10-11T10:27:50+0000",
-     "age_h": 248.8,
+     "age_h": 254.8,
      "caption": "Necha marta esnadingiz?",
-     "like_count": 14300,
-     "comments_count": 3760,
+     "like_count": 14319,
+     "comments_count": 3764,
      "insights": {
-      "views": 798798,
-      "reach": 617073,
-      "likes": 14300,
-      "comments": 3760,
-      "shares": 28570,
+      "views": 799582,
+      "reach": 617743,
+      "likes": 14319,
+      "comments": 3764,
+      "shares": 28630,
       "saved": 1117,
-      "total_interactions": 48653,
-      "ig_reels_avg_watch_time": 34241,
-      "ig_reels_video_view_total_time": 21208364972,
+      "total_interactions": 48736,
+      "ig_reels_avg_watch_time": 34243,
+      "ig_reels_video_view_total_time": 21232936701,
       "reels_skip_rate": 31.8
      }
     },
@@ -1716,20 +2342,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeV8uIPtNer/",
      "posted_at": "2026-10-11T05:52:58+0000",
-     "age_h": 253.4,
+     "age_h": 259.4,
      "caption": "Protein tabiiymi?",
-     "like_count": 3855,
+     "like_count": 3857,
      "comments_count": 54,
      "insights": {
-      "views": 116461,
-      "reach": 92831,
-      "likes": 3855,
+      "views": 116551,
+      "reach": 93099,
+      "likes": 3857,
       "comments": 54,
-      "shares": 2709,
-      "saved": 566,
-      "total_interactions": 7392,
-      "ig_reels_avg_watch_time": 32646,
-      "ig_reels_video_view_total_time": 3044232116,
+      "shares": 2720,
+      "saved": 567,
+      "total_interactions": 7407,
+      "ig_reels_avg_watch_time": 32641,
+      "ig_reels_video_view_total_time": 3046742673,
       "reels_skip_rate": 24.1
      }
     },
@@ -1739,21 +2365,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeUiwEIN5hR/",
      "posted_at": "2026-10-10T16:49:35+0000",
-     "age_h": 266.4,
+     "age_h": 272.4,
      "caption": "Qimmat dori tezroq yordam beradimi? 💊",
      "like_count": 967,
      "comments_count": 17,
      "insights": {
-      "views": 43340,
+      "views": 43382,
       "reach": 32484,
       "likes": 967,
       "comments": 17,
-      "shares": 581,
+      "shares": 582,
       "saved": 109,
-      "total_interactions": 1750,
-      "ig_reels_avg_watch_time": 45517,
-      "ig_reels_video_view_total_time": 1554479073,
-      "reels_skip_rate": 25.5
+      "total_interactions": 1751,
+      "ig_reels_avg_watch_time": 45512,
+      "ig_reels_video_view_total_time": 1555627453,
+      "reels_skip_rate": 25.6
      }
     }
    ],
@@ -1804,43 +2430,38 @@
      "fail": 0
     }
    },
-   "errors": [
-    "follower_demographics/age: empty for all timeframes",
-    "follower_demographics/gender: empty for all timeframes",
-    "follower_demographics/city: empty for all timeframes",
-    "follower_demographics/country: empty for all timeframes"
-   ]
+   "errors": []
   },
   "techcomix": {
    "api_version": "v24.0",
    "profile": {
     "username": "tech.comix",
     "name": "Tech.comix | Texnika sirlari",
-    "followers_count": 2223,
+    "followers_count": 2228,
     "follows_count": 3,
     "media_count": 28
    },
    "totals_7d": {
-    "reach": 517310,
-    "views": 1665625,
-    "accounts_engaged": 41602,
-    "total_interactions": 82154,
-    "likes": 33911,
-    "comments": 20418,
-    "shares": 11810,
-    "saves": 2207,
+    "reach": 518849,
+    "views": 1671673,
+    "accounts_engaged": 41680,
+    "total_interactions": 82423,
+    "likes": 34040,
+    "comments": 20487,
+    "shares": 11836,
+    "saves": 2219,
     "replies": 11,
     "profile_links_taps": 0
    },
    "totals_30d": {
-    "reach": 519785,
-    "views": 1672307,
-    "accounts_engaged": 41940,
-    "total_interactions": 82484,
-    "likes": 34084,
-    "comments": 20460,
-    "shares": 11860,
-    "saves": 2213,
+    "reach": 521339,
+    "views": 1678355,
+    "accounts_engaged": 42020,
+    "total_interactions": 82753,
+    "likes": 34213,
+    "comments": 20529,
+    "shares": 11886,
+    "saves": 2225,
     "replies": 11,
     "profile_links_taps": 0
    },
@@ -1993,7 +2614,472 @@
      "end_time": "2026-10-21T07:00:00+0000"
     }
    ],
-   "demographics": {},
+   "demographics": {
+    "follower_demographics": {
+     "age": {
+      "timeframe": "this_month",
+      "breakdowns": [
+       {
+        "dimension_keys": [
+         "age"
+        ],
+        "results": [
+         {
+          "dimension_values": [
+           "13-17"
+          ],
+          "value": 429
+         },
+         {
+          "dimension_values": [
+           "18-24"
+          ],
+          "value": 396
+         },
+         {
+          "dimension_values": [
+           "25-34"
+          ],
+          "value": 447
+         },
+         {
+          "dimension_values": [
+           "35-44"
+          ],
+          "value": 327
+         },
+         {
+          "dimension_values": [
+           "45-54"
+          ],
+          "value": 101
+         },
+         {
+          "dimension_values": [
+           "55-64"
+          ],
+          "value": 45
+         },
+         {
+          "dimension_values": [
+           "65+"
+          ],
+          "value": 46
+         }
+        ]
+       }
+      ]
+     },
+     "gender": {
+      "timeframe": "this_month",
+      "breakdowns": [
+       {
+        "dimension_keys": [
+         "gender"
+        ],
+        "results": [
+         {
+          "dimension_values": [
+           "F"
+          ],
+          "value": 163
+         },
+         {
+          "dimension_values": [
+           "M"
+          ],
+          "value": 374
+         },
+         {
+          "dimension_values": [
+           "U"
+          ],
+          "value": 1254
+         }
+        ]
+       }
+      ]
+     },
+     "city": {
+      "timeframe": "this_month",
+      "breakdowns": [
+       {
+        "dimension_keys": [
+         "city"
+        ],
+        "results": [
+         {
+          "dimension_values": [
+           "Yangiyul, Tashkent Region"
+          ],
+          "value": 18
+         },
+         {
+          "dimension_values": [
+           "Gazalkent, Tashkent Region"
+          ],
+          "value": 9
+         },
+         {
+          "dimension_values": [
+           "Navoi, Navoiy Region"
+          ],
+          "value": 52
+         },
+         {
+          "dimension_values": [
+           "Shakhrisabz, Qashqadaryo Region"
+          ],
+          "value": 44
+         },
+         {
+          "dimension_values": [
+           "Urtaaul, Tashkent Region"
+          ],
+          "value": 10
+         },
+         {
+          "dimension_values": [
+           "Chirchik, Tashkent Region"
+          ],
+          "value": 20
+         },
+         {
+          "dimension_values": [
+           "Angren, Tashkent Region"
+          ],
+          "value": 18
+         },
+         {
+          "dimension_values": [
+           "Asaka, Andijan Region"
+          ],
+          "value": 17
+         },
+         {
+          "dimension_values": [
+           "Yangier, Sirdaryo Region"
+          ],
+          "value": 260
+         },
+         {
+          "dimension_values": [
+           "Moscow, Moscow"
+          ],
+          "value": 10
+         },
+         {
+          "dimension_values": [
+           "Almalyk, Tashkent Region"
+          ],
+          "value": 18
+         },
+         {
+          "dimension_values": [
+           "Dushanbe, Districts of Republican Subordination"
+          ],
+          "value": 12
+         },
+         {
+          "dimension_values": [
+           "Samarkand, Samarqand Region"
+          ],
+          "value": 53
+         },
+         {
+          "dimension_values": [
+           "Andijan, Andijan Region"
+          ],
+          "value": 61
+         },
+         {
+          "dimension_values": [
+           "Nukus, Karakalpakstan"
+          ],
+          "value": 28
+         },
+         {
+          "dimension_values": [
+           "Namangan, Namangan Region"
+          ],
+          "value": 30
+         },
+         {
+          "dimension_values": [
+           "Kara-Balta, Chuy Region"
+          ],
+          "value": 12
+         },
+         {
+          "dimension_values": [
+           "Margilan, Fergana Region"
+          ],
+          "value": 9
+         },
+         {
+          "dimension_values": [
+           "Gulistan, Sirdaryo Region"
+          ],
+          "value": 14
+         },
+         {
+          "dimension_values": [
+           "Kokan, Fergana Region"
+          ],
+          "value": 23
+         },
+         {
+          "dimension_values": [
+           "Shymkent, South Kazakhstan Region"
+          ],
+          "value": 12
+         },
+         {
+          "dimension_values": [
+           "Yaypan, Fergana Region"
+          ],
+          "value": 69
+         },
+         {
+          "dimension_values": [
+           "Guliston, Sirdaryo Region"
+          ],
+          "value": 20
+         },
+         {
+          "dimension_values": [
+           "Khonobod, Andijan Region"
+          ],
+          "value": 32
+         },
+         {
+          "dimension_values": [
+           "Olmaliq, Tashkent Region"
+          ],
+          "value": 49
+         },
+         {
+          "dimension_values": [
+           "Bukhara, Bukhara Region"
+          ],
+          "value": 10
+         },
+         {
+          "dimension_values": [
+           "Kitab, Qashqadaryo Region"
+          ],
+          "value": 14
+         },
+         {
+          "dimension_values": [
+           "Gurlan, Xorazm Region"
+          ],
+          "value": 26
+         },
+         {
+          "dimension_values": [
+           "Zomin, Jizzakh Region"
+          ],
+          "value": 33
+         },
+         {
+          "dimension_values": [
+           "Osh, Osh Region"
+          ],
+          "value": 29
+         },
+         {
+          "dimension_values": [
+           "Mangit, Karakalpakstan"
+          ],
+          "value": 9
+         },
+         {
+          "dimension_values": [
+           "Dustlik, Jizzakh Region"
+          ],
+          "value": 9
+         },
+         {
+          "dimension_values": [
+           "Kibray, Tashkent Region"
+          ],
+          "value": 9
+         },
+         {
+          "dimension_values": [
+           "Fergana, Fergana Region"
+          ],
+          "value": 32
+         },
+         {
+          "dimension_values": [
+           "Turtkul, Karakalpakstan"
+          ],
+          "value": 68
+         },
+         {
+          "dimension_values": [
+           "Romitan, Bukhara Region"
+          ],
+          "value": 129
+         },
+         {
+          "dimension_values": [
+           "Bekobod, Tashkent Region"
+          ],
+          "value": 11
+         },
+         {
+          "dimension_values": [
+           "Ohangaron, Tashkent Region"
+          ],
+          "value": 18
+         },
+         {
+          "dimension_values": [
+           "Zarafshan, Navoiy Region"
+          ],
+          "value": 53
+         },
+         {
+          "dimension_values": [
+           "Qarshi, Qashqadaryo Region"
+          ],
+          "value": 39
+         },
+         {
+          "dimension_values": [
+           "Urgench, Xorazm Region"
+          ],
+          "value": 80
+         },
+         {
+          "dimension_values": [
+           "Tashkent, Tashkent Region"
+          ],
+          "value": 12
+         },
+         {
+          "dimension_values": [
+           "Jizzakh, Jizzakh Region"
+          ],
+          "value": 18
+         },
+         {
+          "dimension_values": [
+           "Jalal-Abad, Osh Region"
+          ],
+          "value": 25
+         },
+         {
+          "dimension_values": [
+           "Kyzyl-Kiya, Osh Region"
+          ],
+          "value": 29
+         }
+        ]
+       }
+      ]
+     },
+     "country": {
+      "timeframe": "this_month",
+      "breakdowns": [
+       {
+        "dimension_keys": [
+         "country"
+        ],
+        "results": [
+         {
+          "dimension_values": [
+           "DE"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "IL"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "RU"
+          ],
+          "value": 50
+         },
+         {
+          "dimension_values": [
+           "BG"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "UZ"
+          ],
+          "value": 1518
+         },
+         {
+          "dimension_values": [
+           "SY"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "KR"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "SA"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "KZ"
+          ],
+          "value": 24
+         },
+         {
+          "dimension_values": [
+           "TJ"
+          ],
+          "value": 56
+         },
+         {
+          "dimension_values": [
+           "PL"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "KG"
+          ],
+          "value": 130
+         },
+         {
+          "dimension_values": [
+           "NL"
+          ],
+          "value": 1
+         },
+         {
+          "dimension_values": [
+           "TR"
+          ],
+          "value": 5
+         }
+        ]
+       }
+      ]
+     }
+    }
+   },
    "media": [
     {
      "id": "18132418462776504",
@@ -2001,21 +3087,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DewrqefDPBD/",
      "posted_at": "2026-10-21T15:02:20+0000",
-     "age_h": 4.2,
+     "age_h": 10.2,
      "caption": "Qaysi havola haqiqiy?",
-     "like_count": 19,
-     "comments_count": 1,
+     "like_count": 20,
+     "comments_count": 2,
      "insights": {
-      "views": 1753,
-      "reach": 1489,
-      "likes": 19,
-      "comments": 1,
-      "shares": 3,
-      "saved": 1,
-      "total_interactions": 24,
-      "ig_reels_avg_watch_time": 12066,
-      "ig_reels_video_view_total_time": 18123223,
-      "reels_skip_rate": 50.6
+      "views": 1793,
+      "reach": 1528,
+      "likes": 20,
+      "comments": 2,
+      "shares": 4,
+      "saved": 2,
+      "total_interactions": 29,
+      "ig_reels_avg_watch_time": 12090,
+      "ig_reels_video_view_total_time": 18607464,
+      "reels_skip_rate": 50.4
      }
     },
     {
@@ -2024,21 +3110,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Dewk2T-CuAz/",
      "posted_at": "2026-10-21T14:02:31+0000",
-     "age_h": 5.2,
+     "age_h": 11.2,
      "caption": "Nechanchi darajada to'xtadingiz?",
      "like_count": 41,
      "comments_count": 8,
      "insights": {
-      "views": 3632,
-      "reach": 2780,
+      "views": 3690,
+      "reach": 2835,
       "likes": 41,
       "comments": 8,
       "shares": 7,
       "saved": 2,
       "total_interactions": 62,
-      "ig_reels_avg_watch_time": 16500,
-      "ig_reels_video_view_total_time": 48875092,
-      "reels_skip_rate": 36.8
+      "ig_reels_avg_watch_time": 16543,
+      "ig_reels_video_view_total_time": 49863323,
+      "reels_skip_rate": 36.7
      }
     },
     {
@@ -2047,21 +3133,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Dewd2pvCvQ5/",
      "posted_at": "2026-10-21T13:01:28+0000",
-     "age_h": 6.2,
+     "age_h": 12.2,
      "caption": "Siz qaysi harfni yozdingiz?",
-     "like_count": 42,
-     "comments_count": 10,
+     "like_count": 43,
+     "comments_count": 11,
      "insights": {
-      "views": 2535,
-      "reach": 2204,
-      "likes": 42,
-      "comments": 10,
-      "shares": 4,
+      "views": 2648,
+      "reach": 2307,
+      "likes": 43,
+      "comments": 11,
+      "shares": 6,
       "saved": 0,
-      "total_interactions": 57,
-      "ig_reels_avg_watch_time": 15385,
-      "ig_reels_video_view_total_time": 33817555,
-      "reels_skip_rate": 29.5
+      "total_interactions": 62,
+      "ig_reels_avg_watch_time": 17373,
+      "ig_reels_video_view_total_time": 40062775,
+      "reels_skip_rate": 29.1
      }
     },
     {
@@ -2070,21 +3156,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DewW9imCDss/",
      "posted_at": "2026-10-21T12:01:36+0000",
-     "age_h": 7.2,
+     "age_h": 13.2,
      "caption": "Sizda necha ball chiqdi?",
-     "like_count": 182,
-     "comments_count": 66,
+     "like_count": 214,
+     "comments_count": 76,
      "insights": {
-      "views": 9979,
-      "reach": 8323,
-      "likes": 182,
-      "comments": 66,
-      "shares": 39,
-      "saved": 10,
-      "total_interactions": 305,
-      "ig_reels_avg_watch_time": 19223,
-      "ig_reels_video_view_total_time": 163512939,
-      "reels_skip_rate": 29.4
+      "views": 11396,
+      "reach": 9635,
+      "likes": 214,
+      "comments": 76,
+      "shares": 40,
+      "saved": 15,
+      "total_interactions": 354,
+      "ig_reels_avg_watch_time": 19327,
+      "ig_reels_video_view_total_time": 189985054,
+      "reels_skip_rate": 29.5
      }
     },
     {
@@ -2093,20 +3179,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DewQCHllLz0/",
      "posted_at": "2026-10-21T11:00:57+0000",
-     "age_h": 8.2,
+     "age_h": 14.2,
      "caption": "Qaysi parol eng kuchli?",
      "like_count": 35,
      "comments_count": 6,
      "insights": {
-      "views": 1819,
-      "reach": 1502,
+      "views": 1832,
+      "reach": 1516,
       "likes": 35,
       "comments": 6,
       "shares": 5,
       "saved": 4,
       "total_interactions": 54,
-      "ig_reels_avg_watch_time": 19496,
-      "ig_reels_video_view_total_time": 29420844,
+      "ig_reels_avg_watch_time": 19460,
+      "ig_reels_video_view_total_time": 29638305,
       "reels_skip_rate": 40.3
      }
     },
@@ -2116,21 +3202,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeuAHVeipKG/",
      "posted_at": "2026-10-20T14:05:11+0000",
-     "age_h": 29.2,
+     "age_h": 35.2,
      "caption": "Nechtasini bildingiz?",
      "like_count": 28,
      "comments_count": 10,
      "insights": {
-      "views": 3028,
-      "reach": 2598,
+      "views": 3052,
+      "reach": 2623,
       "likes": 28,
       "comments": 10,
       "shares": 7,
       "saved": 6,
       "total_interactions": 52,
-      "ig_reels_avg_watch_time": 18305,
-      "ig_reels_video_view_total_time": 47593486,
-      "reels_skip_rate": 30.1
+      "ig_reels_avg_watch_time": 18323,
+      "ig_reels_video_view_total_time": 48063736,
+      "reels_skip_rate": 30.2
      }
     },
     {
@@ -2139,20 +3225,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Det5HYQDvxI/",
      "posted_at": "2026-10-20T13:02:23+0000",
-     "age_h": 30.2,
+     "age_h": 36.2,
      "caption": "Sizda qaysi telefon?",
      "like_count": 184,
      "comments_count": 38,
      "insights": {
-      "views": 11326,
-      "reach": 9895,
+      "views": 11354,
+      "reach": 9927,
       "likes": 184,
       "comments": 38,
       "shares": 12,
       "saved": 22,
       "total_interactions": 277,
-      "ig_reels_avg_watch_time": 18368,
-      "ig_reels_video_view_total_time": 184351199,
+      "ig_reels_avg_watch_time": 18366,
+      "ig_reels_video_view_total_time": 184805025,
       "reels_skip_rate": 28
      }
     },
@@ -2162,20 +3248,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DetyQubkiYJ/",
      "posted_at": "2026-10-20T12:02:12+0000",
-     "age_h": 31.2,
+     "age_h": 37.2,
      "caption": "Siz qaysi harfni tanladingiz?",
-     "like_count": 1465,
-     "comments_count": 301,
+     "like_count": 1474,
+     "comments_count": 303,
      "insights": {
-      "views": 93685,
-      "reach": 78822,
-      "likes": 1465,
-      "comments": 301,
-      "shares": 332,
-      "saved": 99,
-      "total_interactions": 2282,
-      "ig_reels_avg_watch_time": 20919,
-      "ig_reels_video_view_total_time": 1670859051,
+      "views": 94252,
+      "reach": 80019,
+      "likes": 1474,
+      "comments": 303,
+      "shares": 337,
+      "saved": 100,
+      "total_interactions": 2299,
+      "ig_reels_avg_watch_time": 20913,
+      "ig_reels_video_view_total_time": 1682261786,
       "reels_skip_rate": 24.3
      }
     },
@@ -2185,20 +3271,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DetrUXmkwK0/",
      "posted_at": "2026-10-20T11:02:13+0000",
-     "age_h": 32.2,
+     "age_h": 38.2,
      "caption": "Sizda necha GB chiqdi?",
-     "like_count": 1069,
-     "comments_count": 296,
+     "like_count": 1070,
+     "comments_count": 299,
      "insights": {
-      "views": 59028,
-      "reach": 49463,
-      "likes": 1069,
-      "comments": 296,
+      "views": 59173,
+      "reach": 49492,
+      "likes": 1070,
+      "comments": 299,
       "shares": 505,
       "saved": 181,
-      "total_interactions": 2203,
-      "ig_reels_avg_watch_time": 15556,
-      "ig_reels_video_view_total_time": 787532997,
+      "total_interactions": 2207,
+      "ig_reels_avg_watch_time": 15557,
+      "ig_reels_video_view_total_time": 790076574,
       "reels_skip_rate": 31.8
      }
     },
@@ -2208,20 +3294,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeriMvYif0x/",
      "posted_at": "2026-10-19T15:03:18+0000",
-     "age_h": 52.2,
+     "age_h": 58.2,
      "caption": "Sizning telefoningiz nima der edi?",
      "like_count": 200,
      "comments_count": 25,
      "insights": {
-      "views": 11193,
-      "reach": 9593,
+      "views": 11198,
+      "reach": 9599,
       "likes": 200,
       "comments": 25,
       "shares": 75,
       "saved": 11,
       "total_interactions": 324,
-      "ig_reels_avg_watch_time": 19586,
-      "ig_reels_video_view_total_time": 187928680,
+      "ig_reels_avg_watch_time": 19589,
+      "ig_reels_video_view_total_time": 188099562,
       "reels_skip_rate": 26.5
      }
     },
@@ -2231,20 +3317,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DerUa54n_2R/",
      "posted_at": "2026-10-19T13:03:24+0000",
-     "age_h": 54.2,
+     "age_h": 60.2,
      "caption": "Nechtasini taniysiz?",
      "like_count": 98,
      "comments_count": 17,
      "insights": {
-      "views": 5871,
-      "reach": 5134,
+      "views": 5879,
+      "reach": 5139,
       "likes": 98,
       "comments": 17,
       "shares": 9,
       "saved": 14,
       "total_interactions": 142,
-      "ig_reels_avg_watch_time": 19512,
-      "ig_reels_video_view_total_time": 101075271,
+      "ig_reels_avg_watch_time": 19515,
+      "ig_reels_video_view_total_time": 101186909,
       "reels_skip_rate": 31.5
      }
     },
@@ -2254,20 +3340,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DerGiUnERma/",
      "posted_at": "2026-10-19T11:01:48+0000",
-     "age_h": 56.2,
+     "age_h": 62.2,
      "caption": "Nechanchi darajada to'xtadingiz?",
-     "like_count": 1490,
-     "comments_count": 1370,
+     "like_count": 1491,
+     "comments_count": 1373,
      "insights": {
-      "views": 106015,
-      "reach": 81665,
-      "likes": 1490,
-      "comments": 1370,
-      "shares": 784,
-      "saved": 93,
-      "total_interactions": 3849,
-      "ig_reels_avg_watch_time": 21963,
-      "ig_reels_video_view_total_time": 1894630637,
+      "views": 106198,
+      "reach": 81768,
+      "likes": 1491,
+      "comments": 1373,
+      "shares": 790,
+      "saved": 94,
+      "total_interactions": 3860,
+      "ig_reels_avg_watch_time": 21969,
+      "ig_reels_video_view_total_time": 1899112712,
       "reels_skip_rate": 30.9
      }
     },
@@ -2277,20 +3363,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Deq4xPNjWv6/",
      "posted_at": "2026-10-19T09:01:22+0000",
-     "age_h": 58.2,
+     "age_h": 64.2,
      "caption": "Siz qaysi birini tanladingiz?",
      "like_count": 236,
      "comments_count": 92,
      "insights": {
-      "views": 16834,
+      "views": 16841,
       "reach": 14245,
       "likes": 236,
       "comments": 92,
       "shares": 117,
       "saved": 16,
       "total_interactions": 487,
-      "ig_reels_avg_watch_time": 19818,
-      "ig_reels_video_view_total_time": 281884059,
+      "ig_reels_avg_watch_time": 19819,
+      "ig_reels_video_view_total_time": 281986155,
       "reels_skip_rate": 32.5
      }
     },
@@ -2300,20 +3386,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DeqkIGCjzxr/",
      "posted_at": "2026-10-19T06:01:34+0000",
-     "age_h": 61.2,
+     "age_h": 67.2,
      "caption": "Nechtasini to'g'ri topdingiz?",
      "like_count": 148,
      "comments_count": 15,
      "insights": {
-      "views": 9269,
-      "reach": 7977,
+      "views": 9279,
+      "reach": 7986,
       "likes": 148,
       "comments": 15,
       "shares": 39,
       "saved": 6,
       "total_interactions": 216,
-      "ig_reels_avg_watch_time": 27442,
-      "ig_reels_video_view_total_time": 219537516,
+      "ig_reels_avg_watch_time": 27431,
+      "ig_reels_video_view_total_time": 219675153,
       "reels_skip_rate": 25.9
      }
     },
@@ -2323,20 +3409,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DepEAnKimnw/",
      "posted_at": "2026-10-18T16:00:51+0000",
-     "age_h": 75.2,
+     "age_h": 81.2,
      "caption": "Nechta kursor topdingiz?",
      "like_count": 172,
-     "comments_count": 384,
+     "comments_count": 385,
      "insights": {
-      "views": 26941,
-      "reach": 17634,
+      "views": 26967,
+      "reach": 17647,
       "likes": 172,
-      "comments": 384,
+      "comments": 385,
       "shares": 14,
       "saved": 10,
-      "total_interactions": 593,
-      "ig_reels_avg_watch_time": 16396,
-      "ig_reels_video_view_total_time": 296191167,
+      "total_interactions": 594,
+      "ig_reels_avg_watch_time": 16397,
+      "ig_reels_video_view_total_time": 296555913,
       "reels_skip_rate": 32.3
      }
     },
@@ -2346,20 +3432,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Deo9Lckj2YC/",
      "posted_at": "2026-10-18T15:01:51+0000",
-     "age_h": 76.2,
+     "age_h": 82.2,
      "caption": "Nechta farq topdingiz?",
      "like_count": 178,
      "comments_count": 321,
      "insights": {
-      "views": 21813,
-      "reach": 14812,
+      "views": 21827,
+      "reach": 14823,
       "likes": 178,
       "comments": 321,
       "shares": 13,
       "saved": 9,
       "total_interactions": 546,
-      "ig_reels_avg_watch_time": 14301,
-      "ig_reels_video_view_total_time": 236952275,
+      "ig_reels_avg_watch_time": 14298,
+      "ig_reels_video_view_total_time": 237099705,
       "reels_skip_rate": 35.8
      }
     },
@@ -2369,20 +3455,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Deo2TBoCMx6/",
      "posted_at": "2026-10-18T14:01:57+0000",
-     "age_h": 77.2,
+     "age_h": 83.2,
      "caption": "Sizda necha ball chiqdi?",
-     "like_count": 1187,
-     "comments_count": 1132,
+     "like_count": 1189,
+     "comments_count": 1136,
      "insights": {
-      "views": 67618,
-      "reach": 52738,
-      "likes": 1187,
-      "comments": 1132,
+      "views": 67731,
+      "reach": 52931,
+      "likes": 1189,
+      "comments": 1136,
       "shares": 371,
       "saved": 56,
-      "total_interactions": 2800,
-      "ig_reels_avg_watch_time": 25543,
-      "ig_reels_video_view_total_time": 1446888321,
+      "total_interactions": 2806,
+      "ig_reels_avg_watch_time": 25545,
+      "ig_reels_video_view_total_time": 1449532733,
       "reels_skip_rate": 21.8
      }
     },
@@ -2392,21 +3478,21 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Deo1FMBj9xC/",
      "posted_at": "2026-10-18T13:50:46+0000",
-     "age_h": 77.4,
+     "age_h": 83.4,
      "caption": "Siz qaysilarini tanladingiz?",
      "like_count": 133,
-     "comments_count": 102,
+     "comments_count": 104,
      "insights": {
-      "views": 6463,
-      "reach": 4948,
+      "views": 6478,
+      "reach": 4959,
       "likes": 133,
-      "comments": 102,
+      "comments": 104,
       "shares": 29,
       "saved": 11,
-      "total_interactions": 284,
-      "ig_reels_avg_watch_time": 21214,
-      "ig_reels_video_view_total_time": 109426551,
-      "reels_skip_rate": 29.5
+      "total_interactions": 286,
+      "ig_reels_avg_watch_time": 21204,
+      "ig_reels_video_view_total_time": 109565850,
+      "reels_skip_rate": 29.6
      }
     },
     {
@@ -2415,20 +3501,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Dembwv0AJTe/",
      "posted_at": "2026-10-17T15:30:46+0000",
-     "age_h": 99.7,
+     "age_h": 105.7,
      "caption": "Nechta topdingiz?",
-     "like_count": 1439,
-     "comments_count": 8055,
+     "like_count": 1441,
+     "comments_count": 8079,
      "insights": {
-      "views": 319848,
-      "reach": 196516,
-      "likes": 1439,
-      "comments": 8055,
-      "shares": 470,
+      "views": 320547,
+      "reach": 196738,
+      "likes": 1441,
+      "comments": 8079,
+      "shares": 473,
       "saved": 150,
-      "total_interactions": 10451,
-      "ig_reels_avg_watch_time": 17157,
-      "ig_reels_video_view_total_time": 3563869665,
+      "total_interactions": 10481,
+      "ig_reels_avg_watch_time": 17159,
+      "ig_reels_video_view_total_time": 3572070432,
       "reels_skip_rate": 37.4
      }
     },
@@ -2438,20 +3524,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DemU6u4EYxh/",
      "posted_at": "2026-10-17T14:30:54+0000",
-     "age_h": 100.7,
+     "age_h": 106.7,
      "caption": "Siz qaysilarini tanladingiz?",
-     "like_count": 3940,
-     "comments_count": 4902,
+     "like_count": 3950,
+     "comments_count": 4910,
      "insights": {
-      "views": 246837,
-      "reach": 184603,
-      "likes": 3940,
-      "comments": 4902,
-      "shares": 4079,
-      "saved": 235,
-      "total_interactions": 13364,
-      "ig_reels_avg_watch_time": 25400,
-      "ig_reels_video_view_total_time": 4737567242,
+      "views": 247515,
+      "reach": 185244,
+      "likes": 3950,
+      "comments": 4911,
+      "shares": 4094,
+      "saved": 237,
+      "total_interactions": 13400,
+      "ig_reels_avg_watch_time": 25399,
+      "ig_reels_video_view_total_time": 4753701864,
       "reels_skip_rate": 24.3
      }
     },
@@ -2461,20 +3547,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DemOG40EhBB/",
      "posted_at": "2026-10-17T13:31:41+0000",
-     "age_h": 101.7,
+     "age_h": 107.7,
      "caption": "Sizniki necha soat chiqdi?",
      "like_count": 230,
      "comments_count": 216,
      "insights": {
-      "views": 14460,
+      "views": 14464,
       "reach": 11201,
       "likes": 230,
       "comments": 216,
       "shares": 58,
       "saved": 29,
       "total_interactions": 551,
-      "ig_reels_avg_watch_time": 16731,
-      "ig_reels_video_view_total_time": 187712284,
+      "ig_reels_avg_watch_time": 16728,
+      "ig_reels_video_view_total_time": 187743133,
       "reels_skip_rate": 29.2
      }
     },
@@ -2484,20 +3570,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DemG8soDjPn/",
      "posted_at": "2026-10-17T12:29:09+0000",
-     "age_h": 102.8,
+     "age_h": 108.8,
      "caption": "Sizda ishladimi?",
      "like_count": 51,
      "comments_count": 77,
      "insights": {
-      "views": 3410,
-      "reach": 2124,
+      "views": 3412,
+      "reach": 2130,
       "likes": 51,
       "comments": 77,
       "shares": 66,
       "saved": 4,
       "total_interactions": 202,
-      "ig_reels_avg_watch_time": 19757,
-      "ig_reels_video_view_total_time": 44376453,
+      "ig_reels_avg_watch_time": 19756,
+      "ig_reels_video_view_total_time": 44433319,
       "reels_skip_rate": 39.8
      }
     },
@@ -2507,20 +3593,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DejtZPPgBuE/",
      "posted_at": "2026-10-16T14:07:00+0000",
-     "age_h": 125.1,
+     "age_h": 131.1,
      "caption": "Sizda chiqdimi?",
-     "like_count": 1002,
+     "like_count": 1006,
      "comments_count": 26,
      "insights": {
-      "views": 95075,
-      "reach": 71620,
-      "likes": 1002,
+      "views": 95223,
+      "reach": 71686,
+      "likes": 1006,
       "comments": 26,
-      "shares": 2098,
-      "saved": 430,
-      "total_interactions": 3839,
-      "ig_reels_avg_watch_time": 22189,
-      "ig_reels_video_view_total_time": 1684478544,
+      "shares": 2103,
+      "saved": 431,
+      "total_interactions": 3849,
+      "ig_reels_avg_watch_time": 22192,
+      "ig_reels_video_view_total_time": 1688194130,
       "reels_skip_rate": 22.1
      }
     },
@@ -2530,20 +3616,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DejfjkAk8Xp/",
      "posted_at": "2026-10-16T12:06:11+0000",
-     "age_h": 127.1,
+     "age_h": 133.1,
      "caption": "Sizniki qancha chiqdi?",
-     "like_count": 3991,
-     "comments_count": 1329,
+     "like_count": 3992,
+     "comments_count": 1330,
      "insights": {
-      "views": 205599,
-      "reach": 168837,
-      "likes": 3991,
-      "comments": 1329,
-      "shares": 860,
+      "views": 205808,
+      "reach": 169051,
+      "likes": 3992,
+      "comments": 1330,
+      "shares": 861,
       "saved": 275,
-      "total_interactions": 6726,
-      "ig_reels_avg_watch_time": 25527,
-      "ig_reels_video_view_total_time": 4364258471,
+      "total_interactions": 6729,
+      "ig_reels_avg_watch_time": 25529,
+      "ig_reels_video_view_total_time": 4369977447,
       "reels_skip_rate": 27
      }
     },
@@ -2553,20 +3639,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DejVltOlbuv/",
      "posted_at": "2026-10-16T10:40:38+0000",
-     "age_h": 128.6,
+     "age_h": 134.6,
      "caption": "Siz qaysi birini tanladingiz?",
      "like_count": 1100,
      "comments_count": 25,
      "insights": {
-      "views": 36816,
-      "reach": 31690,
+      "views": 36823,
+      "reach": 31701,
       "likes": 1100,
       "comments": 25,
       "shares": 774,
       "saved": 74,
       "total_interactions": 2014,
-      "ig_reels_avg_watch_time": 22931,
-      "ig_reels_video_view_total_time": 723318326,
+      "ig_reels_avg_watch_time": 22933,
+      "ig_reels_video_view_total_time": 723584563,
       "reels_skip_rate": 25.7
      }
     },
@@ -2576,20 +3662,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DehIlKQG4Iz/",
      "posted_at": "2026-10-15T14:07:55+0000",
-     "age_h": 149.1,
+     "age_h": 155.1,
      "caption": "Siz A ni tanlardingizmi yoki B ni?",
-     "like_count": 7810,
-     "comments_count": 1255,
+     "like_count": 7833,
+     "comments_count": 1256,
      "insights": {
-      "views": 240955,
-      "reach": 202112,
-      "likes": 7810,
-      "comments": 1255,
-      "shares": 504,
-      "saved": 377,
-      "total_interactions": 10229,
-      "ig_reels_avg_watch_time": 47006,
-      "ig_reels_video_view_total_time": 9396023290,
+      "views": 241761,
+      "reach": 202876,
+      "likes": 7833,
+      "comments": 1256,
+      "shares": 505,
+      "saved": 378,
+      "total_interactions": 10256,
+      "ig_reels_avg_watch_time": 47109,
+      "ig_reels_video_view_total_time": 9451292591,
       "reels_skip_rate": 18.4
      }
     },
@@ -2599,20 +3685,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/DegNTZ4tJ5k/",
      "posted_at": "2026-10-15T05:31:10+0000",
-     "age_h": 157.7,
+     "age_h": 163.7,
      "caption": "Qaysi birini tanlardingiz?",
      "like_count": 530,
-     "comments_count": 46,
+     "comments_count": 47,
      "insights": {
-      "views": 31128,
-      "reach": 22685,
+      "views": 31186,
+      "reach": 22750,
       "likes": 530,
-      "comments": 46,
+      "comments": 47,
       "shares": 82,
       "saved": 40,
-      "total_interactions": 730,
-      "ig_reels_avg_watch_time": 27785,
-      "ig_reels_video_view_total_time": 695812092,
+      "total_interactions": 731,
+      "ig_reels_avg_watch_time": 28351,
+      "ig_reels_video_view_total_time": 711996529,
       "reels_skip_rate": 26.7
      }
     },
@@ -2622,20 +3708,20 @@
      "type": "VIDEO",
      "permalink": "https://www.instagram.com/reel/Dee4o_QNthS/",
      "posted_at": "2026-10-14T17:12:42+0000",
-     "age_h": 170.0,
+     "age_h": 176.0,
      "caption": "Telefoningizni koʻp ishlatasizmi?",
      "like_count": 581,
-     "comments_count": 304,
+     "comments_count": 306,
      "insights": {
-      "views": 36559,
-      "reach": 26310,
+      "views": 36621,
+      "reach": 26339,
       "likes": 581,
-      "comments": 304,
+      "comments": 306,
       "shares": 465,
       "saved": 43,
-      "total_interactions": 1428,
-      "ig_reels_avg_watch_time": 40495,
-      "ig_reels_video_view_total_time": 1152418130,
+      "total_interactions": 1430,
+      "ig_reels_avg_watch_time": 40493,
+      "ig_reels_video_view_total_time": 1154717710,
       "reels_skip_rate": 28.8
      }
     }
@@ -2688,10 +3774,6 @@
     }
    },
    "errors": [
-    "follower_demographics/age: empty for all timeframes",
-    "follower_demographics/gender: empty for all timeframes",
-    "follower_demographics/city: empty for all timeframes",
-    "follower_demographics/country: empty for all timeframes",
     "engaged_audience_demographics/age/prev_month: 3006: Not enough users",
     "engaged_audience_demographics/gender/prev_month: 3006: Not enough users",
     "engaged_audience_demographics/city/prev_month: 3006: Not enough users",
