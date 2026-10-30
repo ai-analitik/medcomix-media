@@ -1,0 +1,33 @@
+# Manual only: fetch all comments of one post for a giveaway draw (read-only).
+name: giveaway
+on:
+  workflow_dispatch:
+    inputs:
+      media_id:
+        description: Instagram media id of the giveaway post
+        required: true
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch comments
+        run: python -u stats/giveaway.py
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          MEDIA_ID: ${{ inputs.media_id }}
+      - name: Commit
+        run: |
+          git config user.name "medcomix-stats-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add stats/data
+          git diff --cached --quiet && exit 0
+          git commit -m "giveaway: comments for ${{ inputs.media_id }}"
+          git pull --rebase -q origin main
+          git push origin HEAD:main
