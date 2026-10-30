@@ -7,12 +7,17 @@ import insights as I
 
 tok = os.environ['IG_TOKEN']; mid = os.environ['MEDIA_ID']
 I.API = f'https://graph.instagram.com/{I.VERSIONS[0]}'
-rows, page = [], I.call(f'{mid}/comments', tok, fields='id,text,username,timestamp,replies{id,text,username,timestamp}', limit=50)
+def row(c):
+    f = c.get('from') or {}
+    return {'id': c.get('id'), 'username': c.get('username') or f.get('username'), 'user_id': f.get('id'),
+            'text': c.get('text'), 'timestamp': c.get('timestamp')}
+
+rows, page = [], I.call(f'{mid}/comments', tok, fields='id,text,username,from,timestamp,replies{id,text,username,from,timestamp}', limit=50)
 while True:
     for c in page.get('data', []):
-        rows.append({k: c.get(k) for k in ('id', 'username', 'text', 'timestamp')})
+        rows.append(row(c))
         for r in (c.get('replies') or {}).get('data', []):
-            rows.append({k: r.get(k) for k in ('id', 'username', 'text', 'timestamp')} | {'reply': True})
+            rows.append(row(r) | {'reply': True})
     nxt = page.get('paging', {}).get('next')
     if not nxt: break
     page = I.call(nxt, tok)
